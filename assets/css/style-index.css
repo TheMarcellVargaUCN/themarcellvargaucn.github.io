@@ -71,6 +71,7 @@ footer {
 /* .......................... Navigation Bar .......................... */
 
 .navbar {
+    min-height: 40px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -177,10 +178,13 @@ footer {
     height: 20vw;
     bottom: 0;
     position: relative;
+
+    
     
 }
 
 .index-grid {
+
     width: 65%;
     position: absolute;
     margin-left: auto;
@@ -247,7 +251,7 @@ footer {
     font-size: 2vw;
     font-weight: 400;
     margin-top: 0;
-    margin-bottom: 7.5vh;
+    margin-bottom: 5vh;
     margin-left: 0.75vw;
 }
 
@@ -257,6 +261,10 @@ footer {
     margin: 0;
     bottom: 0;
 
+}
+
+.mobileprofilepicturecontainer {
+    display: none;
 }
 
 .index-background-container {
@@ -315,7 +323,12 @@ footer {
     margin: -5px;
     border-radius: inherit;
     background-image: linear-gradient(270deg, #5A00ED 5.31%, #FF5C00 96.3%);
-;
+
+    padding-top: 0px;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+
 }
 
 
@@ -407,7 +420,9 @@ footer {
     font-weight: 400;
     line-height: 2.5vw;
     letter-spacing: 0em;
-    text-align: center;        
+    text-align: center; 
+    
+    margin-top: 7.5vh;
 }
 
 .projects-cases {
@@ -776,6 +791,10 @@ footer {
         margin-bottom: 2.5vh;
     }
 
+    .arrow {
+        font-size: 2.5vw;
+    }
+
 }
 
   @media only screen and (max-width: 768px) {
@@ -853,11 +872,10 @@ footer {
         align-items: center;
         justfiy-content: space-between;
         place-self: center center;
-        width: 30%;
+        width: 20%;
         padding-top: 1.5vh;
         padding-bottom: 1.5vh;
         padding-left: 2.5vw;
-        padding-right: 15vw;
         top: 0;
         right: 0;
         color: #E57200;
@@ -973,7 +991,6 @@ footer {
     .index-background {
         height: 100%;
         grid-row-gap: 10px;
-        grid-template-rows: 95% 5%;
     }
 
     .upper-slab {
@@ -1080,13 +1097,268 @@ footer {
         font-size: 2vw;
     }
 
+    .arrow {
+        font-size: 4vw;
+    }
+
   }
 
+  @media only screen and (max-width: 425px) {
+
+    .navbar-links.active {
+        width: 40%;
+    }
+
+    .superior {
+        margin-top: 7.5vh;
+    }
+    
+    .index-grid-container {
+        height: 100%;
+        display: grid;
+
+        margin: auto;
+
+        border-collapse: collapse;
+        justify-content: space-between;
+        align-items: center;
+        grid-row-gap: 17.5vh;
+        grid-template-columns: 1fr;
+        grid-template-rows : 1fr 1fr;
+        grid-template-areas:
+        'index-grid'
+        'index-background-container'
+    }
+
+    .index-grid {
+
+        width: auto;
+        margin: 0 auto;
+        padding: 10px;
+        
+        position: relative;
+        padding: 10px 20px;
+        background: #fff;
+        margin: 5px;
+        border-radius: 5px;
+    
+        z-index: unset;
+        place-self: center;
+
+        display: grid;
+
+        grid-area: index-grid;
+        
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        'index-text';
+
+
+    }
+
+    .index-background-container {
+
+        width: 80%;
+
+        position: relative;
+        display: grid;
+
+        grid-area: index-background-container;
+    }
+
+
+    .hey {
+        font-size: 9vw;
+    }
+
+    #first-name {
+        font-size: 20vw;
+        line-height: 20vw;
+    }
+
+    #last-name {
+        font-size: 20vw;
+        line-height: 20vw;
+    }
+
+    .title {
+        font-size: 6vw;
+        margin-bottom: 1vh;
+    }
+
+    .index-img {
+        width: 100%;
+        place-self: center center;
+    }
+
+/*     .index-grid::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        margin: -5px;
+        border-radius: inherit;
+        background-image: linear-gradient(270deg, #5A00ED 5.31%, #FF5C00 96.3%);
+        }
+ */
+
+    .index-background::after {
+        padding-top: 0px;
+        padding-left: 0px;
+        margin-top: 0px;
+        margin-left: 0px;
+
+    }
+
+    #profilepicture {
+        width: 100%
+    }
+
+    .projects {
+        width: 90%;
+    }
+
+    .projects-title {
+        font-size: 7.5vw;
+        line-height: 7.5vw;
+        text-align: center;
+    }
+
+    .projects-cases {
+
+        width: 65%;
+        margin: auto;
+
+        grid-row-gap: 2.5vh;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        'europeanstudysolution'
+        'catchscan'
+        'askcody'
+    }
+    
+    .casetop {
+
+        margin-left: 2.5vw;
+        margin-right: 2.5vw;
+    }
+
+    .casenumber {
+        font-size: 5vw;
+        line-height: 5vw;
+    }
+
+    .caseline {
+        height: 3px;
+    }
+
+    .casebody {
+        padding-top: 0vh;
+    }
+
+    .caseimage {
+        padding: 2.5vw;
+    }
+
+    .casetitle h4 {
+        font-size: 4vw;
+        line-height: 4vw;
+    }
+
+    .contact {
+        width: 90%;
+    }
+
+    .contacttitle {
+        font-size: 7.5vw;
+        line-height: 7.5vw;
+        text-align: center;
+    }
+    
+    .contactdetails {
+        width: fit-content;
+        margin: auto;
+
+        grid-row-gap: 3vh;
+    }
+
+    .contactemail {
+        grid-column-gap: 4vw;
+    }
+
+    .contactlinkedin {
+        grid-column-gap: 4vw;
+    }
+
+    .contactemail i {
+        font-size: 6vw;
+    }
+    
+    .contactlinkedin i {
+        font-size: 6vw;
+    }
+
+    #copyright {
+        font-size: 2vw;
+    }
+
+    .arrow {
+        font-size: 4vw;
+        display: none
+    }
+    
+
+}
+
   @media only screen and (max-width: 320px) {
-      .navbar-links li a {
+
+    .superior {
+        grid-row-gap: 5vh;
+    }
+
+    .navbar-links.active {
+        width: 50%;
+    }
+
+    .navbar-links li a {
           padding-left: 15vw;
           padding-right: 15vw;
-      }
+    }
+
+    .index-grid-container {
+        grid-row-gap: 12.5vh;
+    }
+
+    .contactemail {
+        align-items: center;
+        justfiy-content: space-between;
+        place-self: center center;
+
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        'emailicon'
+        'emailaddress'
+    }
+
+    .contactlinkedin {
+        align-items: center;
+        justfiy-content: space-between;
+        place-self: center center;
+
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        'linkedinicon'
+        'linkedinaddress';
+    }
+
   }
 
 /* .......................... SVG Animation .......................... */
@@ -1183,3 +1455,31 @@ footer {
     -webkit-animation: animate-svg-stroke-3 1s ease-in-out 1.24s both;
             animation: animate-svg-stroke-3 1s ease-in-out 1.24s both;
   }
+
+
+.arrow {
+    text-align: center;
+    margin-top: 2.5vh;
+}
+
+
+.arrow i {
+    color: #000000;
+    transition: transform .2s;
+}
+
+.bounce {
+    animation: bounce 3s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-20px);
+    }
+}
