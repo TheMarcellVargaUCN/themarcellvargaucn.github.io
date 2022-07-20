@@ -1317,15 +1317,6 @@ footer {
         grid-row-gap: 5vh;
     }
 
-    .navbar-links.active {
-        width: 50%;
-    }
-
-    .navbar-links li a {
-          padding-left: 15vw;
-          padding-right: 15vw;
-    }
-
     .index-grid-container {
         grid-row-gap: 12.5vh;
     }
