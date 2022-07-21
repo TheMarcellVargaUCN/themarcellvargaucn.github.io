@@ -18,6 +18,10 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+@font-face {
+    font-family: 'Triester';
+    src: url("../fonts/triester-vector-webfont.woff2");
+}
 
 @font-face {
     font-family: 'Triester Sans';
@@ -249,10 +253,11 @@ footer {
 
 .title {
     font-size: 2vw;
-    font-weight: 400;
+    font-weight: 500;
     margin-top: 0;
     margin-bottom: 5vh;
     margin-left: 0.75vw;
+    letter-spacing: 0.3em;
 }
 
 
@@ -515,8 +520,6 @@ footer {
 .caseline {
     grid-area: caseline;
     place-self: center start;
-
-    filter: none;
     
     width: 100%;
     height: 2px;
