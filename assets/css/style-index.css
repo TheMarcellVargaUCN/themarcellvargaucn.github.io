@@ -434,7 +434,7 @@ footer {
     display: grid;
     border-collapse: collapse;
     justify-content: space-between;
-    /* grid-column-gap: 3vw; */
+    grid-column-gap: 2.5vw;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:

@@ -176,6 +176,7 @@ footer {
     width: 80%;
     margin: 0 auto;
 
+
     display: grid;
     border-collapse: collapse;
     justify-content: space-between;
@@ -185,8 +186,21 @@ footer {
     grid-template-areas:
     'casetitle'
     'caseimage'
-    'first'
-    'second';
+    'caseintro'
+    'projectmanagement'
+    'userresearch'
+    'personas'
+    'fiveplane'
+    'ia'
+    'wireframing'
+    'lofi'
+    'surface'
+    'mockup'
+    'responsive'
+    'realization'
+    'usability'
+    'seo'
+    'summary';
 }
 
 .casetitle-container {
@@ -201,12 +215,175 @@ footer {
     grid-area: caseimage;
 }
 
-#first {
-    grid-area: first;
+#caseintro {
+    grid-area: caseintro;
+}
+
+#projectmanagement {
+    grid-area: projectmanagement;
+}
+
+#userresearch {
+    grid-area: userresearch;
+}
+
+#personas {
+    grid-area: personas;
+}
+
+#fiveplane {
+    grid-area: fiveplane;
+}
+
+#ia {
+    grid-area: ia;
+}
+
+#wireframing {
+    grid-area: wireframing;
+}
+
+#lofi {
+    grid-area: lofi;
+}
+
+#surface {
+    grid-area: surface;
+}
+
+#mockup {
+    grid-area: mockup;
+}
+
+#responsive {
+    grid-area: responsive;
+}
+
+#realization {
+    grid-area: realization;
+}
+
+#usability {
+    grid-area: usability;
+}
+
+#seo {
+    grid-area: seo;
+}
+
+#summary {
+    grid-area: summary;
+}
+
+.casebody img {
+    width: 75%;
+    display: block;
+    margin: 0px auto;
+    margin-top: 7.5vh;
+    margin-bottom: 7.5vh;
+
+}
+
+.imageduogrid {
+    width: 100%;
+
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+
+    display: grid;
+    border-collapse: collapse;
+    justify-content: space-between;
+    grid-row-gap: 2.5vw;
+    grid-column-gap: 2.5vw;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    'left right';
+
+}
+
+.imageduogrid img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0px auto;
+    padding: 0;
+}
+
+.imagetriogrid {
+    width: 100%;
+
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+
+    display: grid;
+    border-collapse: collapse;
+    justify-content: space-between;
+    grid-row-gap: 2.5vw;
+    grid-column-gap: 2.5vw;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    'left middle right';
+
+}
+
+.imagetriogrid img {
+    width: 75%;
+    height: auto;
+    display: block;
+    margin: 0px auto;
+    padding: 0;
+}
+
+
+.imagequadgrid {
+
+    width: 100%;
+
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+
+    display: grid;
+    border-collapse: collapse;
+    justify-content: space-between;
+    grid-row-gap: 2.5vw;
+    grid-column-gap: 2.5vw;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    'left second'
+    'third right';
+
+}
+
+.imagequadgrid img {
+    width: 75%;
+    height: auto;
+    display: block;
+    margin: 0px auto;
+    padding: 0px;
+
+}
+
+#left {
+    grid-area: left;
+}
+
+#middle {
+    grid-area: middle;
 }
 
 #second {
     grid-area: second;
+}
+
+#third {
+    grid-area: third;
+}
+
+#right {
+    grid-area: right;
 }
 
 .casetitle-container {
@@ -415,12 +592,11 @@ footer {
 }
 
 .casebody {
-    width: 45%;
+    width: 60%;
 
     margin: auto;
     margin-top: 2.5vh;
     margin-bottom: 2.5vh;
-
 
     display: grid;
     border-collapse: collapse;
@@ -451,7 +627,7 @@ footer {
     display: grid;
     border-collapse: collapse;
     justify-content: space-between;
-    grid-template-columns: min-content;
+    grid-template-columns: auto;
     grid-template-rows: min-content;
     grid-template-areas:
     'casesection';
