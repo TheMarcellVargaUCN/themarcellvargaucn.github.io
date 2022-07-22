@@ -623,13 +623,14 @@ footer {
 
 .casebodytitle {
     width: 100%;
-
+    
     display: grid;
     border-collapse: collapse;
     justify-content: space-between;
     grid-column-gap: 1vw;
+    grid-row-gap: 1vh;
     grid-template-columns: min-content 1fr;
-    grid-template-rows: min-content;
+    grid-template-rows: auto;
     grid-template-areas:
     'casesection casebodyline';
 
@@ -637,7 +638,7 @@ footer {
 
 .casebodysection {
     grid-area: casesection;
-    place-self: center;
+    place-self: start;
     margin: 0;
     padding: 0;
 
