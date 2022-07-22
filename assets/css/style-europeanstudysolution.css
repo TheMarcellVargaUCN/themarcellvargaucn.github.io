@@ -15,6 +15,15 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+p {
+
+}
+
+#highlight {
+    font-weight: 600;
+    margin-bottom: 1.5vh;
+}
+
 @font-face {
     font-family: 'Triester';
     src: url("../fonts/triester-vector-webfont.woff2");
@@ -627,12 +636,12 @@ footer {
     display: grid;
     border-collapse: collapse;
     justify-content: space-between;
-    grid-column-gap: 1vw;
-    grid-row-gap: 1vh;
-    grid-template-columns: min-content 1fr;
+/*     grid-column-gap: 1vw;
+    grid-row-gap: 1vh; */
+    grid-template-columns: min-content;
     grid-template-rows: auto;
     grid-template-areas:
-    'casesection casebodyline';
+    'casesection';
 
 }
 
@@ -678,23 +687,21 @@ footer {
 /* .......................... Other Cases .......................... */
 
 .othercases {
-    width: 80%;
+    width: 40%;
     height: min-content;
     display: grid;
     margin: auto;
     justify-items: center;
     align-items: center;
     place-self: center;
-
     border-collapse: collapse;
     justify-content: space-between;
-    align-items: center;
     grid-row-gap: 2.5vh;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-    'othercasestitle othercasestitle'
-    'one two'
+    'othercasestitle'
+    'othercasescontent'
 
 }
 
@@ -708,16 +715,129 @@ footer {
     letter-spacing: 0em;
     text-align: center;
 
-    margin: 0;
-    margin-top: 5vh;
+    margin: 0 auto;
 }
 
-.one {
-    grid-area: one;
+.othercasescontent {
+
+    display: grid;
+
+    border-collapse: collapse;
+    justify-content: space-between;
+    align-items: center;
+    grid-column-gap: 2.5vw;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    'catchscan askcody'
+
 }
 
-.two {
-    grid-area: two;
+#catchscan {
+    grid-area: catchscan;
+}
+
+#askcody {
+    grid-area: askcody;
+}
+
+.othercasecard {
+    display: grid;
+    border-collapse: collapse;
+    justify-content: space-between;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    'casetop'
+    'caseimage'
+    'casetitle';    
+}
+
+
+.othercasebody {
+
+    padding-top: 2.5vh;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    border-radius: 16px;
+
+    text-decoration: none;
+    color: #3A3A3A;
+
+    -webkit-transition-duration: 0.5s; /* Safari */
+    transition-duration: 0.5s;
+
+}
+
+.othercasebody:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    transform: translateY(-10px);
+}
+
+.othercasebody:active {
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    filter: none;
+}
+
+.othercasetop {
+
+    margin-left: 1vw;
+    margin-right: 1vw;
+
+    display: grid;
+    border-collapse: collapse;
+    justify-content: space-between;
+    grid-column-gap: 1em;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: min-content;
+    grid-template-areas:
+    'casenumber caseline';
+}
+
+.othercasenumber {
+    grid-area: casenumber;
+    
+    font-size: 1.5vw;
+    font-weight: 700;
+    line-height: 1.5vw;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.othercaseline {
+    grid-area: caseline;
+    place-self: center start;
+    
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, #5A00ED 5.31%, #FF5C00 96.3%);
+    border-radius: 16px;
+
+}
+
+.othercaseimage {
+    background: #E9E9E9;
+    border-radius: 16px;
+    padding: 1.5vw;
+}
+
+.othercaseimage img {
+    width: 100%;
+    height: 100%;
+}
+
+.othercasetitle h4 {
+    font-size: 1.25vw;
+    font-weight: 400;
+    line-height: 1.25vw;
+    letter-spacing: 0em;
+    text-align: center;
+    letter-spacing: 0.2em;
+
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+    padding: 0;
 }
 
 /* .......................... Footer .......................... */
