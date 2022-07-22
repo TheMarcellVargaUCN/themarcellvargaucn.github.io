@@ -622,15 +622,16 @@ footer {
 }
 
 .casebodytitle {
-    width: 20%;
+    width: 100%;
 
     display: grid;
     border-collapse: collapse;
     justify-content: space-between;
-    grid-template-columns: auto;
+    grid-column-gap: 1vw;
+    grid-template-columns: min-content 1fr;
     grid-template-rows: min-content;
     grid-template-areas:
-    'casesection';
+    'casesection casebodyline';
 
 }
 
@@ -648,7 +649,7 @@ footer {
 
 
 .casebodyline {
-    grid-area: caseline;
+    grid-area: casebodyline;
     place-self: center start;
     
     width: 100%;
