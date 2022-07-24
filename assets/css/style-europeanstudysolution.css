@@ -20,8 +20,11 @@ p {
 }
 
 #highlight {
+    font-size: 1.1vw;
+    line-height: 1.1vw;
     font-weight: 600;
     margin-bottom: 1.5vh;
+    
 }
 
 @font-face {
@@ -290,6 +293,8 @@ footer {
     margin: 0px auto;
     margin-top: 7.5vh;
     margin-bottom: 7.5vh;
+
+    border-radius: 16px;
 
 }
 
@@ -721,6 +726,7 @@ footer {
 .othercasescontent {
 
     display: grid;
+    width: 60%;
 
     border-collapse: collapse;
     justify-content: space-between;
@@ -922,6 +928,181 @@ footer {
 
   @media only screen and (max-width: 768px) {
 
+    .superior {
+        margin-top: 5vh;
+    }
+
+    .case {
+        width: 100%;
+    }
+
+    .casetitle {
+        font-size: 7.5vw;
+        line-height: 7.5vw;
+    }
+
+    .casedetails-container {
+        grid-column-gap: 2vw;
+    }
+
+    .creators {
+        grid-column-gap: 0.75vw;
+    }
+
+    .creators i {
+        font-size: 2.4vw;
+        margin-top: 0.5vh;
+        margin-bottom: 0.5vh;
+    }
+
+    .creators h3 {
+        font-size: 2.4vw;
+    }
+
+    .timeframe {
+        grid-column-gap: 0.75vw;
+    }
+
+    .timeframe i {
+        font-size: 2.4vw;
+        margin-top: 0.5vh;
+        margin-bottom: 0.5vh;
+
+    }
+
+    .timeframe h3 {
+        font-size: 2.4vw;
+    }
+
+    .casetheme {
+        font-size: 2vw;
+        margin-bottom: 0;
+    }
+
+    .casebody {
+        width: 80%;
+
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .casebodysection {
+        font-size: 4vw;
+        line-height: 4vw;
+
+    }
+
+    .casebodytext {
+        font-size: 2.5vw;
+        line-height: 3.25vw;
+        font-weight: 300;
+
+    }
+
+    #highlight {
+        font-size: 2.75vw;
+        line-height: 3.5vw;
+    }
+
+    .casebody img {
+        width: 80%;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+
+    }
+
+    .imageduogrid {
+        margin-top: 2.5vh;
+        margin-bottom: 2.5vh;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        'left'
+        'right';
+
+    }
+
+    .imagetriogrid {
+        margin-top: 2.5vh;
+        margin-bottom: 2.5vh;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        'left'
+        'middle'
+        'right';
+
+    }
+
+    .imagequadgrid {
+        margin-top: 2.5vh;
+        margin-bottom: 2.5vh;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        'left'
+        'second'
+        'third'
+        'right';
+
+    }
+
+    .othercases {
+        width: 80%;
+
+    }
+
+    .othercasestitle {
+        font-size: 6.5vw;
+        line-height: 6.5vw;
+
+    }
+
+    .othercaseimage {
+        padding: 2vw;
+    }
+
+    .othercaseimage img {
+        border-radius: 8px;
+    }
+
+    .othercasescontent {
+        width: 70%;
+
+        grid-row-gap: 1.5vh;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        'catchscan'
+        'askcody';
+    }
+
+    .othercasenumber {
+        font-size: 3vw;
+        line-height: 3vw;
+    }
+
+    .othercasebody {
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        padding-left: 1vw;
+        padding-right: 1vw;
+
+    }
+
+    .othercasetitle h4 {
+        font-size: 2.75vw;
+        line-height: 2.75vw;
+        
+        margin-top: 1.5vh;
+        margin-bottom: 1.5vh;
+    }
+
+    #copyright {
+        font-size: 2vw;
+    }
 
   }
 
@@ -1066,6 +1247,104 @@ footer {
         transform: translateY(-8px) rotate(-45deg);
     }
 
+    
+    .casetitle {
+        font-size: 8.5vw;
+        line-height: 8.5vw;
+
+        margin-top: 6vh;
+        margin-bottom: 0.25vh;
+    }
+
+    .casedetails-container {
+        grid-column-gap: 2.5vw;
+    }
+
+    .creators {
+        grid-column-gap: 1.5vw;
+    }
+
+    .creators i {
+        font-size: 3vw;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .creators h3 {
+        font-size: 3vw;
+    }
+
+    .timeframe {
+        grid-column-gap: 1.5vw;
+    }
+
+    .timeframe i {
+        font-size: 3vw;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .timeframe h3 {
+        font-size: 3vw;
+    }
+
+    .casetheme {
+        font-size: 2.75vw;
+    }
+
+    .caseimage {
+        width: 85%;
+    }
+
+    .casebody img {
+        width: 85%;
+    }
+
+    .casebodysection {
+        font-size: 5vw;
+        line-height: 5vw;
+    }
+
+    .casebodytext {
+        font-size: 3.25vw;
+        line-height: 4.25vw;
+    }
+
+    #highlight {
+        font-size: 3.5vw;
+        line-height: 4.5vw;
+    }
+
+    .othercases {
+        width: 85%;
+    }
+
+    .othercasestitle {
+        font-size: 7.5vw;
+        line-height: 7.5vw;
+    }
+
+    .othercasescontent {
+        width: 75%
+    }
+
+    .othercasenumber {
+        font-size: 4vw;
+        line-height: 4vw;
+    }
+
+    .othercaseimage {
+        padding: 3.5vw;
+    }
+
+    .othercasetitle h4 {
+        font-size: 3.25vw;
+        line-height: 3.25vw;
+    }
+
+    #copyright {
+        font-size: 2.75vw;
+    }
 
 }
 
