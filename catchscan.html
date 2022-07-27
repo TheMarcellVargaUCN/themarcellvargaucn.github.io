@@ -1,12 +1,569 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="Marcell Varga - UX/UI Designer / Web Design" content="Got an idea? Let's work it out together!">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5d734a0479.js" crossorigin="anonymous"></script>
+    <link href="assets/css/style-catchscan.css" rel="stylesheet">
+    <link href="assets/css/all.css" rel="stylesheet">
+    <script src="assets/js/script-index.js" defer></script>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+    integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+    crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    
+    <title>Marcell Varga - UX / UI Designer</title>
+
 </head>
+
 <body>
-    <h1>CatchScan Study Case</h1>
+
+        <!-- .......................... Navigation Bar .......................... -->
+
+        <nav class="navbar">
+
+            <a href="/"><img src="assets/images/signaturelogo.svg" id="logo" alt="logo"></a>
+
+            <div class="navbar-links">
+                <a href="/index.html#about" class="nav-link" id="about">About</a>
+                <a href="/index.html#contact" class="nav-link" id="contact">Contact</a>
+            </div>
+
+            <div class="navbar-hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>    
+
+        </nav>
+
+     <!-- .......................... Main .......................... -->
+
+        <main class="superior">
+        
+    <!-- .......................... Index .......................... -->
+
+            <section class="case">
+                
+                <div class="casetitle-container">
+
+                    <h1 class="casetitle">
+                        European Study Solution
+                    </h1>
+
+                    <div class="casedetails-container">
+
+                        <div class="casedetails">
+                            <div class="creators">
+                                <div id="creatorsicon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                
+                                <h3 id="creatorstext">2</h3>
+                
+                            </div>
+                            
+                            <div class="timeframe">
+                                <div id="timeframeicon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                
+                                <h3 id="timeframetext">3&nbsp;weeks</h3>
+                                
+                            </div>
+                        </div>
+
+                        <div class="caseline"></div>
+
+                    </div>
+
+                    <h3 class="casetheme" id="casetheme">Copyright Protection SaaS</h2>
+
+                </div>
+
+<!--                 <div class="caseabout">
+
+                    <div class="role">
+                        <div class="roletitle">
+                            <h4>Role</h4>
+                        </div>
+                        <div class="roletext">
+                            <h5>User Research</h5>
+                        </div>
+                    </div>
+
+                </div>
+ -->
+                <div class="caseimage">
+                    <img src="assets/images/CatchScan-Index.png" alt="Index image of CatchScan">
+                </div>
+
+                <div class="casebody" id="caseintro">
+                    
+                    <div class="casebodytitle" id="overview">
+                        <h3 class="casebodysection">Overview</h3>
+                        <div class="casebodyline"></div>
+                    </div>
+
+                    <div class="casebodytext">
+
+                        <p>CatchScan is an IT company, whose mission is to help content creators to protect their brand and place them in control of their content. Their product is a software driven platform where content creators can establish an automated protection regarding to their copyright. They offer a web app, where influencers or other artists can insert their intellectual work (for now only images) and make sure that no one else is using it without their permission. As the creator upload their work, the algorithm can search for any misconduct.
+                            <br>
+                            <br>
+                            Our client gave us the task to come up with a user-friendly interface and reestablish the architecture of their app while utilizing their already existing in-house algorithm.
+                            <br>
+                            <br>
+                            <span id="highlight">Problem</span>
+                            <br>
+                            <br>
+                            <p>Our client had created a beta version of their product, where their main focus was on the functionality itself, rather than the user experience. This led to broken user flows of the existing dashboard, resulting in an unpleasing, confusing experience, which doesn’t represent the company’s values.
+                            </p>
+                            <br>
+                            <br>
+                            <span id="highlight">Objective</span>
+                            <br>
+                            <br>
+                            <p>The goal of this project is to create a web app for CatchScan, which will be utilizing their copyright matching algorithm. We need to create a visual interface with a well-developed and optimized structure, which will focus on information architecture and user navigation. The dashboard interface will be created from scratch and will help the user to find the functions with ease and fulfill their needs.</p> 
+
+                    </div>
+                                        
+                </div>
+
+                <div class="casebody" id="benchmarking">
+                    
+                    <div class="casebodytitle">
+                        <h3 class="casebodysection">Benchmarking</h3>
+                        <div class="casebodyline"></div>
+                    </div>
+
+                    <div class="casebodytext">
+
+                        <p>After meeting with our client, we did extensive research on competitors’ web solutions. Based on that, we came down to the conclusion that there are multiple companies trying to solve the same matter as our client. After discovering them we discussed them with our client and concluded our findings. Turned out that the main similarity between the business is the purpose of searching for an authorized nor misused content created by creative artists. After further investigation we noticed and listed the main pros and cons of their solutions.</p>
+
+                    </div>
+                                        
+                </div>
+
+                <div class="casebody" id="userresearch">
+                    
+                    <div class="casebodytitle">
+                        <h3 class="casebodysection">User&nbsp;Research</h3>
+                        <div class="casebodyline"></div>
+                    </div>
+
+                    <div class="casebodytext">
+
+                        <p>We had started off by user categorization prior to conducting qualitative interviews to define who is our target audience that will be using our web application. First we had set a subjective criteria where are we considered our user base based on their behaviors and psychographics. After this we also established an objective criteria which consisted of, they are geographic and the demographic status.
+                            <br>
+                            <br>    
+                            Based on our results we assume that our target audience is English speaking content creators between the age of 18-35. They are professionals who due to their busy lifestyle lack the time to deal with the misuse of their content.
+                            <br>
+                            <br>
+                            After we prepared the user categorization, we have created an interview guide. By having this, we were able to understand the thinking process of our users and how they are relating and dealing with this issue.
+                        </p>
+
+                    </div>
+                                        
+                </div>
+
+                <div class="casebody" id="empathymap">
+                    
+                    <div class="casebodytitle">
+                        <h3 class="casebodysection">Empathy Map</h3>
+                        <div class="casebodyline"></div>
+                    </div>
+
+                    <div class="casebodytext">
+
+                        <p>To organize and see the outcome of the interviews we created an empathy map, where we have sorted our results into four sections</p>
+                            <br>
+                            <br>
+                            <img src="assets/images/CS-Images/Figure2.png">
+                            <br>
+                            <br>
+                        <p>This helped us not only to further understand our users but also to prioritize their needs.</p>            
+
+                    </div>
+                                        
+                </div>
+
+                <div class="casebody" id="personas">
+                    
+                    <div class="casebodytitle">
+                        <h3 class="casebodysection">Personas</h3>
+                        <div class="casebodyline"></div>
+                    </div>
+
+                    <div class="casebodytext">
+
+                        <p>To enhance our research further, we believe we can benefit from creating Personas. As a result, we came up with two personas, which helped us to get a better understanding about what our users’ possible needs could be and what aspects should we emphasize on based on our research.</p>
+                        <br>
+                        <br>
+                        <img src="assets/images/CS-Images/Figure3.png">
+                        <br>
+                        <br>
+                        <p>The first Persona is Anders Jensen, a Danish outgoing videographer from Lyngby, who is looking for a way to protect his content and take legal action against the violators who used his videos without permission. The fast-paced lifestyle of Anders does not allow to him to look whether his content was stolen, as he is always on the move</p>
+                        <br>
+                        <br>
+                        <img src="assets/images/CS-Images/Figure4.png">
+                        <br>
+                        <br>
+                        <p>The second Persona is Josie Jacobs, Belgian fashion photographer, currently residing in Amsterdam, Netherlands. She is looking for a way to establish her own brand using her own produced content, while preserving her originality and preventing competitors stealing her ideas.</p>
+                    </div>
+                                        
+                </div>
+
+                <div class="casebody" id="userjourney">
+                    
+                    <div class="casebodytitle">
+                        <h3 class="casebodysection">User Journey</h3>
+                        <div class="casebodyline"></div>
+                    </div>
+
+                    <div class="casebodytext">
+
+                        <p>User journey represents the steps that the user needs to go through while using the product. Furthermore, we are predicting, based on the user research, how the users might feel during fulfilling the tasks. However, the emotions evoked by the behavior and the visuals of the web application cannot be always positive. To use this for our advantage, we took notes of how we can improve the user interaction and the overall satisfaction. This helped us to plan out the process starting from submitting the cases, while taking the user's emotion in mind
+                        </p>
+                        <br>
+                        <br>
+                        <img src="assets/images/CS-Images/Figure5.png">
+                    </div>
+                                        
+                </div>
+
+                <div class="casebody" id="developementmethod">
+                    
+                    <div class="casebodytitle">
+                        <h3 class="casebodysection">Developement Method</h3>
+                        <div class="casebodyline"></div>
+                    </div>
+
+                    <div class="casebodytext">
+
+                        <p>At the beginning of the whole process, we need to establish what kind of development method we are going to use. In this project we will be using Design Thinking development. Since it is a human-centered methodology, we bring the users to the spotlight and try to understand their problems, wants, needs, values, feelings. As we will know more about our users, we might re-frame our problem in order to achieve the best solution for them.
+                        </p>
+                        <br>
+                        <br>
+                        <p>Design thinking consist of 5 parts – empathize, define, ideate, prototype and test. It is non-linear process. That means, while we are moving forward in the overall process, we will be going back to the former steps</p>
+                    </div>
+                                        
+                </div>
+
+                <div class="casebody" id="empathize">
+                    
+                    <div class="casebodytitle">
+                        <h3 class="casebodysection">Empathize</h3>
+                        <div class="casebodyline"></div>
+                    </div>
+
+                    <div class="casebodytext">
+
+                        <p>In this phase of the project, the main goal was to connect with our users – know who they are, what are their needs and expectations.</p>
+                        <br>
+                        <br>
+                        <p>Starting with the client research with an explanation of the problem, through the competitor research and collection of the standard data, continuing with the conduction of the qualitative interviews with a few content creators, designing the personas, forming the empathy map, and lastly, creating the user journey leads to getting profitable results.</p>
+
+                    </div>
+                                        
+                </div>
+
+                <div class="casebody" id="define">
+                    
+                    <div class="casebodytitle">
+                        <h3 class="casebodysection">Define</h3>
+                        <div class="casebodyline"></div>
+                    </div>
+
+                    <div class="casebodytext">
+
+                        <span id="highlight">Human-centric problem fomulations</span> 
+                        <br>
+                        <br>
+                        <p>Progressing forward using the Design Thinking method, we had to re-phrase the problem into human-centric ways. The user is brought to the foreground, where everything is adapted to fulfill his/her need and preferences. To lead our product in the right direction, we have started with formulating problem from the users’ point of view</p>
+                        <br>
+                        <br>
+                        <img src="assets/images/CS-Images/Figure7.png">
+                        <br>
+                        <br>
+                        <p>To simplify these formulations, we have narrowed them down by paraphrasing them into one sentence forms.</p>
+                        <br>
+                        <br>
+                        <p>To support the idea and process we had reformulated the statement once again by creating questions from the one sentence insights</p>
+                        <br>
+                        <br>
+                        <span id="highlight">Content Inventory</span>
+                        <br>
+                        <br>
+                        <p>Since we need to determine the scope of the project, we have conducted content inventory, which is a list of all necessary elements of the project.</p>
+
+                    </div>
+                                        
+                </div>
+
+                <div class="casebody" id="ideate">
+                    
+                    <div class="casebodytitle">
+                        <h3 class="casebodysection">Ideate</h3>
+                        <div class="casebodyline"></div>
+                    </div>
+
+                    <div class="casebodytext">
+
+                        <p>After getting connected with the users and understand what they want and need, we are kicking off the ideation phase</p>
+                        <br>
+                        <br>
+                        <span id="highlight">Brainstorm</span>
+                        <br>
+                        <br>
+                        <p>As a result of our inspiring brainstorming session, ended up with ideas based on both the user research results and the human-centered formulations.</p>
+                        <br>
+                        <br>
+                        <p>One of the most important result was proceeding with the dashboard styled design as we believed it could incorporate the most tools and usability.</p>
+                        <br>
+                        <br>
+                        <p>Moreover, to accomplish this we stumbled upon applying elements of glassmorphism to help emphasize on the objects.</p>
+                        <br>
+                        <br>
+                        <span id="highlight">Information Architecture</span>
+                        <br>
+                        <br>
+                        <p>Our goal was to establish the information architecture in a way to make sure that the users can get their tasks done by spending the least amount of effort as possible, resulting in a satisfying, pleasant experience. This will result that the users will fill the product much more natural which could result in an even better experience as they are not focusing on figuring out the expected behavior on the website. The energy they are saving by this could be transferred to accomplishing their task.</p>
+                        <br>
+                        <br>
+                        <p>The main purpose of web pages, in our case a web app, is to communicate important and relevant information towards the user. Our main task is to provide the user with a clear and assorted information, which is being accompanied by well-defined suitable font type, size and color. For this project we believe that we had to carefully select them to make the use of the solution as easy as possible. For this reason, we tried to clearly separate the different categories and pages. We try to emphasize and improve on the usability as much as we can according to this.</p>
+                        <br>
+                        <br>
+                        <img src="assets/images/CS-Images/Figure11.png">
+
+                    </div>
+                                        
+                </div>
+
+                <div class="casebody" id="prototype">
+                    
+                    <div class="casebodytitle">
+                        <h3 class="casebodysection">Prototype</h3>
+                        <div class="casebodyline"></div>
+                    </div>
+
+                    <div class="casebodytext">
+
+                        <span id="highlight">Sketches</span>
+                        <br>
+                        <br>
+                        <p>After concluding our ideations phase, we had started make initial sketches that represents the primary idea of our design solution.</p>
+                        <br>
+                        <br>
+                        <img src="assets/images/CS-Images/Figure12.png">
+                        <br>
+                        <br>
+                        <span id="highlight">Low-Fidelity Wireframes</span>
+                        <br>
+                        <br>
+                        <p>To become more precise and see the actual details, although not fully acquired yet, we have created low-fidelity wireframes, where we were focusing on the layout and identifying elements.</p>
+                        <br>
+                        <br>
+                        <img src="assets/images/CS-Images/Figure13.png">
+                        <br>
+                        <br>
+                        <p>Considering the results of the user research we chose to apply a desktop first approach. This is because based on the user's preferences this is a more corporate pensive way of presenting the users with features. Nevertheless, it is an approach more welcome in the professional space and there are more opportunity to increase the number of features.</p>
+                        <br>
+                        <br>
+                        <span id="highlight">High-Fidelity Mockups</span>
+                        <br>
+                        <br>
+                        <p>Having done with wireframes, guided us towards creating high-fidelity mockups.</p>
+                        <br>
+                        <br>
+                        <p>Before we started the actual process of designing, we had decided on using Atomic Design as our choice of team collaboration methodology</p>
+                        <br>
+                        <br>
+                        <span id="highlight">Atomic Design</span>
+                        <br>
+                        <br>
+                        <p>As the atomic design consists of components, our design process started with the smallest ones - Atoms</p>
+                        <br>
+                        <br>
+                        <img src="assets/images/CS-Images/Figure14.png">
+                        <br>
+                        <br>
+                        <p>By combining atoms together, we formed molecules. In our case as a molecules, we can consider buttons in navigation formed with an icon and text and cards with the buttons, texts, and images</p>
+                        <br>
+                        <br>
+                        <img src="assets/images/CS-Images/Figure15.png">
+                        <br>
+                        <br>
+                        <p>Organisms are next phase of connection smaller elements. Putting together cards we create “libraries”, menu buttons - navigation</p>
+                        <br>
+                        <br>
+                        <img src="assets/images/CS-Images/Figure16.png">
+                        <br>
+                        <br>
+                        <p>Templates are already complex solutions. It is a combination of organisms, and it represents how the pages will look like</p>
+                        <br>
+                        <br>
+                        <img src="assets/images/CS-Images/Figure17.png">
+                        <br>
+                        <br>
+                        <p>Finally, the complete design with included content - pages</p>
+                        <br>
+                        <br>
+                        <img src="assets/images/CS-Images/Figure18.png">
+                        <br>
+                        <br>
+                        <span id="highlight">Colors</span>
+                        <br>
+                        <br>
+                        <p>The first that draws the attention of the user are colors. They make the first impression, they affect how the users perceive the interface, see the functionality, they might evoke emotions, they increase the brand recognition as well, and invite the users to take an action. We are preparing solution for CatchScan, start-up company, with an already existing branding, thus we have decided to keep with their image and use their brand colors - blue and orange</p>
+                        <br>
+                        <br>
+                        <img src="assets/images/CS-Images/Figure19.png">
+                        <br>
+                        <br>
+                        <p>Even though, this was not the requirement, we believe to keep the consistency with their promoting website is a good brand move</p>
+                        <br>
+                        <br>
+                        <span id="highlight">Iterations</span>
+                        <br>
+                        <br>
+                        <p>Throughout the design process, we went through several iteration before we found the best solution. It was not easy to find solution that captures our style the most in harmony</p>
+                        <br>
+                        <br>
+                        <div class="imagetriogrid">
+                        <img src="assets/images/CS-Images/Figure20.png">
+                        <img src="assets/images/CS-Images/Figure21.png">
+                        <img src="assets/images/CS-Images/Figure22.png">
+                        </div>
+                        <br>
+                        <br>
+                        <p>Our final solution resulted in having a simple one-color background, as we believed this was can the user focus the most on the content, which will facilitate the process of fulfilling any task.</p>
+                        <br>
+                        <br>
+                        <img src="assets/images/CS-Images/Figure23.png">
+
+                    </div>
+                                        
+                </div>
+
+                <div class="casebody" id="test">
+                    
+                    <div class="casebodytitle">
+                        <h3 class="casebodysection">Test</h3>
+                        <div class="casebodyline"></div>
+                    </div>
+
+                    <div class="casebodytext">
+
+                        <p>To validate our findings, we had proceeded with conducting hybrid testing, using Five Second and Think Aloud tests. They helped us to verify that call-to-actions and the other important information are highlighted enough to catch the users attention and to make sure the user can interact with the product effortlessly.</p>
+
+                    </div>
+                                        
+                </div>
+
+                <div class="casebody" id="realization">
+                    
+                    <div class="casebodytitle">
+                        <h3 class="casebodysection">Realization</h3>
+                        <div class="casebodyline"></div>
+                    </div>
+
+                    <div class="casebodytext">
+
+                        <p>Our project was coded using HTML, CSS and JavaScript. Additionally, we utilized Tailwind as our choice of CSS Framework, which resulted in a swift and efficient workflow.</p>
+                        <br>
+                        <br>
+                        <p>As we were creating a web app for service, having the feature of being able to sign up and log in is an essential part. We established this feature therefore the users can access the platform in the easiest way possible</p>
+                        <br>
+                        <br>
+                        <img src="assets/images/CS-Images/Figure24.png">
+                        <br>
+                        <br>
+                        <p>We started off the sign-up sequence by designing with the objective the ask for the most essential data from the user which is inevitable. For the subsequent steps we had to utilize our research and evaluate which lead us to include multiple user input.</p>
+                        <br>
+                        <br>
+                        <img src="assets/images/CS-Images/Figure25.png">
+
+                    </div>
+                                        
+                </div>
+
+
+                <div class="casebody" id="summary">
+                    
+                    <div class="casebodytitle">
+                        <h3 class="casebodysection">Summary</h3>
+                        <div class="casebodyline"></div>
+                    </div>
+
+                    <div class="casebodytext">
+
+                        <p>To wrap up our process, we have created a dashboard for the SaaS company – CatchScan. We have created a way for their customers to protect their intellectual properties by giving them the possibility to upload their content for the algorithm to process. Furthermore, we provide them with the opportunity to initiate legal action against the found misusers, while supplying them with useful analytics</p>
+                        <br>
+                        <br>
+                        <p>The product was accomplished in a human-centered way though conducting broad research, resulting in an easy-to-use, intuitive interface.</p>
+
+                    </div>
+                                        
+                </div>
+
+            </section>
+
+            <section class="othercases">
+
+                    <h3 class="othercasestitle">Check out my other works!</h3>
+
+                    <div class="othercasescontent">
+
+                    <div class="othercasecard" id="catchscan">
+                        <div class="othercasetop">
+                            <h3 class="othercasenumber">01</h3>
+                            <div class="othercaseline"></div>
+                        </div>
+                        <a class="othercasebody" href="./europeanstudysolution.html">
+                            <div class="othercaseimage">
+                                <img src="assets/images/EuropeanStudySolution-Index.png" alt="Index image of European Study Solution">
+                            </div>
+                            <div class="othercasetitle">
+                                <h4>European Study Solution</h4>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="othercasecard" id="askcody">
+                        <div class="othercasetop">
+                            <h3 class="othercasenumber">03</h3>
+                            <div class="othercaseline"></div>
+                        </div>
+                        <a class="othercasebody" href="./askcody.html">
+                            <div class="othercaseimage">
+                                <img src="assets/images/AskCody-Index.png" alt="Index image of AskCody">
+                            </div>
+                            <div class="othercasetitle">
+                                <h4>Askcody</h4>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+                </div>
+                
+            </section>
+
+            <footer>
+                <p id="copyright">© 2022 Marcell Varga</p>
+            </footer>
+
+        </main>
+
 </body>
+
 </html>
