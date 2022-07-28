@@ -726,7 +726,7 @@ footer {
 .othercasescontent {
 
     display: grid;
-    width: 60%;
+    width: 100%;
 
     border-collapse: collapse;
     justify-content: space-between;

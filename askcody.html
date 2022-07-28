@@ -1,12 +1,557 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="Marcell Varga - UX/UI Designer / Web Design" content="Got an idea? Let's work it out together!">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5d734a0479.js" crossorigin="anonymous"></script>
+    <link href="assets/css/style-askcody.css" rel="stylesheet">
+    <link href="assets/css/all.css" rel="stylesheet">
+    <script src="assets/js/script-index.js" defer></script>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+    integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+    crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    
+    <title>Marcell Varga - UX / UI Designer</title>
+
 </head>
+
 <body>
-    <h1>AskCody Study Case</h1>
+
+        <!-- .......................... Navigation Bar .......................... -->
+
+        <nav class="navbar">
+
+            <a href="/"><img src="assets/images/signaturelogo.svg" id="logo" alt="logo"></a>
+
+            <div class="navbar-links">
+                <a href="/index.html#about" class="nav-link" id="about">About</a>
+                <a href="/index.html#contact" class="nav-link" id="contact">Contact</a>
+            </div>
+
+            <div class="navbar-hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>    
+
+        </nav>
+
+     <!-- .......................... Main .......................... -->
+
+        <main class="superior">
+        
+    <!-- .......................... Index .......................... -->
+
+            <section class="case">
+                
+                <div class="casetitle-container">
+
+                    <h1 class="casetitle">
+                        AskCody
+                    </h1>
+
+                    <div class="casedetails-container">
+
+                        <div class="casedetails">
+                            <div class="creators">
+                                <div id="creatorsicon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                
+                                <h3 id="creatorstext">3</h3>
+                
+                            </div>
+                            
+                            <div class="timeframe">
+                                <div id="timeframeicon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                
+                                <h3 id="timeframetext">4&nbsp;weeks</h3>
+                                
+                            </div>
+                        </div>
+
+                        <div class="caseline"></div>
+
+                    </div>
+
+                    <h3 class="casetheme" id="casetheme">Hybrid Office Manager</h2>
+
+                </div>
+
+<!--                 <div class="caseabout">
+
+                    <div class="role">
+                        <div class="roletitle">
+                            <h4>Role</h4>
+                        </div>
+                        <div class="roletext">
+                            <h5>User Research</h5>
+                        </div>
+                    </div>
+
+                </div>
+ -->
+                <div class="caseimage">
+                    <img src="assets/images/AskCody-Index.png" alt="Index image of AskCody">
+                </div>
+
+                <div class="casebody" id="caseintro">
+                    
+                    <div class="casebodytitle" id="overview">
+                        <h3 class="casebodysection">Overview</h3>
+                        <div class="casebodyline"></div>
+                    </div>
+
+                    <div class="casebodytext">
+
+                        <p>AskCody is a company specializing in efficient meeting management through digital solutions. Their philosophy is based on improving the workplace experience, thus increasing employee productivity and satisfaction. Their main product is a cloud-based, flexible and secure solution for creating and managing meetings for office spaces, therefore creating a controlled distribution of the employees. Their platform also makes it possible to edit, track and analyze the meetings. However, our client is addressing major challenge due to the change in corporate office culture.
+                            <br>
+                            <br>
+                            <span id="highlight">Problem</span>
+                            <br>
+                            <br>
+                            <p>After the COVID-19 pandemic, the concept of workplaces has changed. More and more companies are in the process of transition from static to hybrid office environments. With this transition a new problem arises. Office resource management tools are simply not suitable for the new era of hybrid transformation.
+                            </p>
+                            <br>
+                            <br>
+                            <span id="highlight">Objective</span>
+                            <br>
+                            <br>
+                            <p>To help companies address this issue, we will investigate developing a software solution which will capitalize on utilizing all the company's resources while providing flexible work arrangements for its employees.</p> 
+
+                    </div>
+                                        
+                </div>
+
+                <div class="casebody" id="developementmethod"></div>
+                    
+                    <div class="casebodytitle">
+                        <h3 class="casebodysection">Developement Method</h3>
+                        <div class="casebodyline"></div>
+                    </div>
+
+                    <div class="casebodytext">
+
+                        <p>Our choice of development method for the project was Design Thinking as it can help us systematically extract, teach, learn and apply human centric techniques to solve problems in a creative and innovative way. By using Design Thinking we will ensure that the focus is kept on the users' needs and values, and that it is a human-centered procedure.
+                        </p>
+
+                    </div>
+                                        
+                </div>
+
+                <div class="casebody" id="empathize">
+                    
+                    <div class="casebodytitle">
+                        <h3 class="casebodysection">Empathize</h3>
+                        <div class="casebodyline"></div>
+                    </div>
+
+                    <div class="casebodytext">
+
+                      <span id="highlight">Interviews</span>
+                      <br>
+                      <br>
+                      <p>We kicked off our qualitative data gathering by conducting interviews. It was crucial to understand our audience’s thoughts and needs, therefore we prepared a thorough interview guide and carefully choose the possible participants, as it would greatly influence the result. We believed that the best source to extract information from would be from personnel of the corporate offices.</p>
+                      <br>
+                      <br>
+                      <p>Based on the interviews, we gained insight to many unique needs, which we sorted and evaluated. From this we concluded that companies are looking to optimize their capacity of space resources and to increase the productivity of their employees by automating everyday ad-hoc tasks. In addition, complying with the hybrid model was a key factor.</p>
+                      <br>
+                      <br>
+                      <span id="highlight">Personas</span>
+                      <br>
+                      <br>
+                      <p>Together our findings we settled on having personas for the best representation of our target audience. By doing this we'll be able to know the specific needs of workers in similar positions and use their possible motivation or pain points for our own good. We chose to bring our perception for making it role based. In our case, this seems to be the best option as we were in possession of an incredible amount of data from both our qualitative and quantitative sources.</p>
+                      <br>
+                      <br>
+                      <p>Our first persona was Lise. She's a 28-year-old Danish project manager based out of Copenhagen, whose work got more complicated by the introduction of a hybrid work environment, as now she must calculate with employees working both on-spot and remotely. Because of her job, her most important requirement is to be able to organize meetings regardless of where employees are located.</p>
+                      <br>
+                      <br>
+                      <img src="assets/images/AC-Images/Figure1.png">
+                      <br>
+                      <br>
+                      <p>Besides Lise, we decided to make additional personas to capture our findings even more precisely. Just like Michelle, an office manager.</p>
+                      <br>
+                      <br>
+                      <img src="assets/images/AC-Images/Figure2.png">
+
+                    </div>
+                                        
+                </div>
+
+                <div class="casebody" id="define">
+                    
+                    <div class="casebodytitle">
+                        <h3 class="casebodysection">Define</h3>
+                        <div class="casebodyline"></div>
+                    </div>
+
+                    <div class="casebodytext">
+
+                        <p>After finding the core issues to be solved, we analyze our observations from our users and funnel our thoughts down to make it more tangible. To do this we are synthesizing our findings so we can define the problem.</p>
+                        <br>
+                        <br>
+                        <span id="highlight">Point of View</span>
+                        <br>
+                        <br>
+                        <p>Since our project was revolving around exploring what are the crucial issues and how they could act as an obstacle for digital-first work environment, we had to define what the exact problems are, using an actionable problem statements.</p>
+                        <br>
+                        <br>
+                        <img src="assets/images/AC-Images/Figure3.1.png">
+                        <br>
+                        <br>
+                        <img src="assets/images/AC-Images/Figure3.2.png">
+                        <br>
+                        <br>
+                        <img src="assets/images/AC-Images/Figure3.3.png">
+                        <br>
+                        <br>
+                        <img src="assets/images/AC-Images/Figure3.4.png">
+
+                    </div>
+                                        
+                </div>
+
+                <div class="casebody" id="ideate">
+                    
+                    <div class="casebodytitle">
+                        <h3 class="casebodysection">Ideate</h3>
+                        <div class="casebodyline"></div>
+                    </div>
+
+                    <div class="casebodytext">
+
+                        <span id="highlight">Crazy 8s</span>
+                        <br>
+                        <br>
+                        <p>Having sufficient data made it easy for us to start ideating on the show structure for the product and with it the functionalities which will provide a solution for different user types.</p>
+                        <br>
+                        <br>
+                        <p>First, we are stating our goal, which in our case was to discover the potential functionality of the product. To fulfill this, we developed ideas under a short, predetermined amount of time and later validated them among us.</p>
+                        <br>
+                        <br>
+                        <img src="assets/images/AC-Images/Figure4.png">
+                        <br>
+                        <br>
+                        <img src="assets/images/AC-Images/Figure5.png">
+                        <br>
+                        <br>
+                        <img src="assets/images/AC-Images/Figure6.png">
+                        <br>
+                        <br>
+                        <span id="highlight">Card Sorting</span>
+                        <br>
+                        <br>
+                        <p>Our next step was to conduct a card sorting study. We have created cards based on our previous brainstorming sessions, where we were discussing taxonomically low-level features and other aspects of the future system.</p>
+                        <br>
+                        <br>
+                        <p>We choose our card sorting method to be hybrid, as our end-product was focusing more on functionality, rather than pure information presentation.</p>
+                        <br>
+                        <br>
+                        <img src="assets/images/AC-Images/Figure7.png">
+                        <br>
+                        <br>
+                        <p>The results were captivating, which drove us to generate additional categories, which gave us a further approvement.</p>
+                        <br>
+                        <br>
+                        <img src="assets/images/AC-Images/Figure8.png">
+                        <br>
+                        <br>
+                        <img src="assets/images/AC-Images/Figure9.png">
+                        <br>
+                        <br>
+                        <span id="highlight">Information Architecture</span>
+                        <br>
+                        <br>
+                        <p>We started to establish an informational architecture by creating a sitemap. Visual sitemaps gave us a clear representation of the structure for our product. To institute the taxonomy, we had made clear relations between the content, which also lay down the foundation for multiple user flows.</p>
+                        <br>
+                        <br>
+                        <img src="assets/images/AC-Images/Figure10.png">
+                        <br>
+                        <br>
+                        <img src="assets/images/AC-Images/Figure11.png">
+                        <br>
+                        <br>
+                        <p>Before finalizing the IA, we created a sitemap for the most valid categories and listed their functions and dependencies beneath them, based on the study results. This was necessary as after working with many pages with many functionalities their relations became quite confusing and therefore, we visualize them.</p>
+                        <br>
+                        <br>
+                        <img src="assets/images/AC-Images/Figure12.png">
+                        <br>
+                        <br>
+                        <span id="highlight">User Stories</span>
+                        <br>
+                        <br>
+                        <p>Before going any further we had to make a product discovery. Here we revised our progress and verified if all customer goals and product requirements achievable and can be met.</p>
+                        <br>
+                        <br>
+                        <p>Our discovery was dictated by two factors, which were Our project needs and the technical requirements, including the potential limitations.</p>
+                        <br>
+                        <br>
+                        <p>We have made a list with User Stories to catch all software features from our users' perspective.</p>
+                        <br>
+                        <br>
+                        <img src="assets/images/AC-Images/Figure13.png">
+
+                    </div>
+                                        
+                </div>
+
+                <div class="casebody" id="prototype">
+                    
+                    <div class="casebodytitle">
+                        <h3 class="casebodysection">Prototype</h3>
+                        <div class="casebodyline"></div>
+                    </div>
+
+                    <div class="casebodytext">
+
+                       <span id="highlight">Sketches</span>
+                       <br>
+                       <br>
+                       <p>We had started to create initial sketches to capture our vision and get an overview of the page structure. We're also able to visualize the information architecture and project the user behaviors.</p>
+                       <br>
+                       <br>
+                       <img src="assets/images/AC-Images/Figure14.jpg">
+                       <br>
+                       <br>
+                       <img src="assets/images/AC-Images/Figure15.jpg">
+                       <br>
+                       <br>
+                       <span id="highlight">Low-Fidelity Wireframes</span>
+                       <br>
+                       <br>
+                       <p>This time we started to apply more details, including a well-defined information architecture.</p>
+                       <br>
+                       <br>
+                       <p>Based on the assessment of the card sorting we had re-evaluated and placed the access to the most important pages into the header, ending up with five subpages.</p>
+                       <br>
+                       <br>
+                       <img src="assets/images/AC-Images/Figure16.png">
+                       <br>
+                       <br>
+                       <span id="highlight">Mid-Fidelity Prototype</span>
+                       <br>
+                       <br>
+                       <p>Our design was determined by the Fluent UI design system while retaining the AskCody corporate visual identity.</p>
+                       <br>
+                       <br>
+                       <p>We wanted to provide a dashboard when entrance for the recurring visitors, who might just visit the platform to catch up on the recent happening. We had included a snippet of the calendar for a quick overview of the upcoming events, which is one of the most crucial assets of an office worker. In case the visitor in the project manager, we also placed a quick overview widget for the tickets submitted though the support.</p>
+                       <br>
+                       <br>
+                       <img src="assets/images/AC-Images/Figure17.png">
+                       <br>
+                       <br>
+                       <p>We have created design assets and components respecting the Microsoft design language, Fluent, due to our platform of implementation.</p>
+                       <br>
+                       <br>
+                       <p>In terms of colors, we had to take both Teams' and AskCody's into consideration. It was important to establish a harmony between them, while not blending them in too much.</p>
+                       <br>
+                       <br>
+                       <img src="assets/images/AC-Images/Figure18.png">
+                       <br>
+                       <br>
+                       <img src="assets/images/AC-Images/Figure19.1.png">
+                       <br>
+                       <br>
+                       <img src="assets/images/AC-Images/Figure19.2.png">
+                       <br>
+                       <br>
+                       <p>Despite them being a way to interpret the brand itself, it also helps capturing feeling, which we want to make the users feel when they are using our solution. Using it properly can improve how the users perceive and interact with the interface. AskCody's main color is a shade of blue, which is notoriously stand for calmness or serenity. This exactly captures what our goal is with our product by contributing to the establishment of a structured and orderly environment.</p>
+                       <br>
+                       <br>
+                       <span id="highlight">High-Fidelity Mockups</span>
+                       <br>
+                       <br>
+                       <p>Our last iterations included all the functional and interactive elements, using both the design system and the custom assets.</p>
+                       <br>
+                       <br>
+                       <p>At this point, we had planned out how the interactions should behave and what they should result in, including changes based on additional feedback.</p>
+                       <br>
+                       <br>
+                       <img src="assets/images/AC-Images/Figure20.png">
+                       <br>
+                       <br>
+                       <img src="assets/images/AC-Images/Figure21.png">
+                       <br>
+                       <br>
+                       <img src="assets/images/AC-Images/Figure23.png">
+                       <br>
+                       <br>
+                       <img src="assets/images/AC-Images/Figure26.png">
+                       <br>
+                       <br>
+                       <img src="assets/images/AC-Images/Figure27.png">
+                       <br>
+                       <br>
+                       <img src="assets/images/AC-Images/Figure28.png">
+                       <br>
+                       <br>
+                       <img src="assets/images/AC-Images/Figure29.png">
+                       <br>
+                       <br>
+                       <img src="assets/images/AC-Images/Figure30.png">
+                       <br>
+                       <br>
+                       <img src="assets/images/AC-Images/Figure33.png">
+                       <br>
+                       <br>
+                       <span id="highlight">Mobile Functionality</span>
+                       <br>
+                       <br>
+                       <p>When thinking about convenience and fast ways of booking the resources, the mobile comes as an obvious solution, unless the ad-hoc on-site version is more convenient. This is exactly the reason we have decided to create a concept of what mobile interaction could look like.</p>
+                       <br>
+                       <br>
+                       <p>We have created a concept combining did you to land real world implication, where booking could be done using mobile devices.</p>
+                       <br>
+                       <br>
+                       <img src="assets/images/AC-Images/Figure34.png">
+                       <br>
+                       <br>
+                       <img src="assets/images/AC-Images/Figure35.png">
+                       <br>
+                       <br>
+                       <img src="assets/images/AC-Images/Figure36.png">
+                       <br>
+                       <br>
+                       <span id="highlight">Watch Functionality</span>
+                       <br>
+                       <br>
+                       <p>We carried out a watch companion implementation of the booking system that is remarkably similar to the mobile version.</p>
+                       <br>
+                       <br>
+                       <img src="assets/images/AC-Images/Figure37.png">
+                       <br>
+                       <br>
+                       <img src="assets/images/AC-Images/Figure38.png">
+
+
+                    </div>
+                                        
+                </div>
+
+                <div class="casebody" id="test">
+                    
+                    <div class="casebodytitle">
+                        <h3 class="casebodysection">Test</h3>
+                        <div class="casebodyline"></div>
+                    </div>
+
+                    <div class="casebodytext">
+
+                        <p>We had proceeded with carrying out a series of five second tests to verify our findings.</p>
+                        <br>
+                        <br>
+                        <p>For the first session, we took the busiest page of our prototype to see if the call-to-actions are working as intended and what grabs the user attention the most.</p>
+                        <br>
+                        <br>
+                        <img src="assets/images/AC-Images/Figure39.png">
+                        <br>
+                        <br>
+                        <img src="assets/images/AC-Images/Figure40.png">
+                        <br>
+                        <br>
+                        <p>The results of our testing sessions were better than we anticipated. The key targets we were aiming for are recognized by the users in the way that we thought they would. This confirmed our solutions are validity.</p>
+
+                    </div>
+                                        
+                </div>
+
+                <div class="casebody" id="realization">
+                    
+                    <div class="casebodytitle">
+                        <h3 class="casebodysection">Realization</h3>
+                        <div class="casebodyline"></div>
+                    </div>
+
+                    <div class="casebodytext">
+
+                        <p>The solution was carried out using HTML, CSS, JavaScript. We utilized React as Front-end framework, by having React-Bootstrap as our library. This was due to it is being Microsoft's recommended tool for building Team's applications.</p>
+                        <br>
+                        <br>
+                        <p>React being a lightweight allowed us a flexible and rapid process.</p>
+
+                    </div>
+                                        
+                </div>
+
+                <div class="casebody" id="summary">
+                    
+                    <div class="casebodytitle">
+                        <h3 class="casebodysection">Summary</h3>
+                        <div class="casebodyline"></div>
+                    </div>
+
+                    <div class="casebodytext">
+
+                        <p>To summarize, we have created an innovative concept for AskCody to solve the issue of resource management and flexible transformation in the office management area.</p>
+                        <br>
+                        <br>
+                        <p>We had carried out a centralized solution existing part of AskCody's ecosystem integrated into Microsoft Teams to manage office resources, while providing an overview of the company both for the employees and the managers in the rising trend of hybrid work environments.</p>
+
+                    </div>
+                                        
+                </div>
+
+            </section>
+
+            <section class="othercases">
+
+                    <h3 class="othercasestitle">Check out my other works!</h3>
+
+                    <div class="othercasescontent">
+
+                    <div class="othercasecard" id="catchscan">
+                        <div class="othercasetop">
+                            <h3 class="othercasenumber">01</h3>
+                            <div class="othercaseline"></div>
+                        </div>
+                        <a class="othercasebody" href="./europeanstudysolution.html">
+                            <div class="othercaseimage">
+                                <img src="assets/images/EuropeanStudySolution-Index.png" alt="Index image of European Study Solution">
+                            </div>
+                            <div class="othercasetitle">
+                                <h4>ESS</h4>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="othercasecard" id="askcody">
+                        <div class="othercasetop">
+                            <h3 class="othercasenumber">02</h3>
+                            <div class="othercaseline"></div>
+                        </div>
+                        <a class="othercasebody" href="./catchscan.html">
+                            <div class="othercaseimage">
+                                <img src="assets/images/CatchScan-Index.png" alt="Index image of CatchScan">
+                            </div>
+                            <div class="othercasetitle">
+                                <h4>Askcody</h4>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+                </div>
+                
+            </section>
+
+            <footer>
+                <p id="copyright">© 2022 Marcell Varga</p>
+            </footer>
+
+        </main>
+
 </body>
+
 </html>

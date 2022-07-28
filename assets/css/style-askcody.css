@@ -1,0 +1,1324 @@
+/* All */
+
+html {
+    height: 100%;
+    margin: 0;
+    scoll-behavior: smooth;
+    line-height: 1.2;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding : 0;
+    background-color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+
+}
+
+#highlight {
+    font-size: 1.1vw;
+    line-height: 1.1vw;
+    font-weight: 600;
+    margin-bottom: 1.5vh;
+    
+}
+
+@font-face {
+    font-family: 'Triester';
+    src: url("../fonts/triester-vector-webfont.woff2");
+}
+
+@font-face {
+    font-family: 'Triester Sans';
+    src: url("../fonts/triester_sans-webfont.woff2");
+}
+
+@font-face {
+    font-family: 'Triester Sans Outline';
+    src: url("../fonts/triester_sans_outline-webfont.woff2");
+}
+
+
+/* .......................... Main .......................... */
+
+.superior {
+
+
+    margin-top: 10vh;
+    
+    width: 100%;
+    height: 100%;
+    display: grid;
+    border-collapse: collapse;
+    justify-content: space-between;
+    grid-row-gap: 10vh;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr min-content min-content;
+    grid-template-areas:
+    'case'
+    'othercases'
+    'footer';
+    
+}
+
+.case {
+    grid-area: case;
+}
+
+.othercases {
+    grid-area: othercases;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/* .......................... Navigation Bar .......................... */
+
+.navbar {
+    min-height: 40px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 30;
+    border-bottom: 1px solid #E9E9E9;
+    background-color: #FFFFFF;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    'logo'
+    'links'
+    'logo';
+}
+
+
+#logo {
+    grid-area: logo;
+    width: 75px;
+    height: 100%;
+    float: left;
+    align-items: center;
+    margin-left: 2.5vw;
+    padding-left: 2vw;
+    
+}
+
+.navbar-links {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 30px;
+    grid-template-areas:
+    'about contact';
+}
+
+#about {
+    grid-area: about;
+}
+
+#contact {
+    grid-area: contact;
+}
+
+
+
+.navbar-links a {
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #000000;
+}
+
+.navbar-links a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.navbar-links a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+.navbar-hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+/* .......................... Case .......................... */
+
+.case {
+
+    grid-area: case;
+
+    width: 80%;
+    margin: 0 auto;
+
+
+    display: grid;
+    border-collapse: collapse;
+    justify-content: space-between;
+    grid-row-gap: 2.5vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    'casetitle'
+    'caseimage'
+    'caseintro'
+    'developementmethod'
+    'empathize'
+    'define'
+    'ideate'
+    'prototype'
+    'test'
+    'realization'
+    'summary';
+}
+
+.casetitle-container {
+    grid-area: casetitle;
+}
+
+.caseabout {
+    grid-area: caseabout;
+}
+
+.caseimage {
+    grid-area: caseimage;
+}
+
+#caseintro {
+    grid-area: caseintro;
+}
+
+#developementmethod {
+    grid-area: developementmethod;
+}
+
+#empathize {
+    grid-area: empathize;
+}
+
+#define {
+    grid-area: define;
+}
+
+#ideate {
+    grid-area: ideate;
+}
+
+#prototype {
+    grid-area: prototype;
+}
+
+#test {
+    grid-area: test;
+}
+
+#realization {
+    grid-area: realization;
+}
+
+#summary {
+    grid-area: summary;
+}
+
+.casebody img {
+    width: 75%;
+    display: block;
+    margin: 0px auto;
+    margin-top: 7.5vh;
+    margin-bottom: 7.5vh;
+
+    border-radius: 16px;
+
+}
+
+.imageduogrid {
+    width: 100%;
+
+    margin-top: 7.5vh;
+    margin-bottom: 7.5vh;
+
+    display: grid;
+    border-collapse: collapse;
+    justify-content: space-between;
+    grid-row-gap: 2.5vw;
+    grid-column-gap: 2.5vw;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    'left right';
+
+}
+
+.imageduogrid img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0px auto;
+    padding: 0;
+}
+
+.imagetriogrid {
+    width: 100%;
+
+    margin-top: 7.5vh;
+    margin-bottom: 7.5vh;
+
+    display: grid;
+    border-collapse: collapse;
+    justify-content: space-between;
+    grid-row-gap: 2.5vw;
+    grid-column-gap: 2.5vw;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    'left middle right';
+
+}
+
+.imagetriogrid img {
+    width: 75%;
+    height: auto;
+    display: block;
+    margin: 0px auto;
+    padding: 0;
+}
+
+
+.imagequadgrid {
+
+    width: 100%;
+
+    margin-top: 7.5vh;
+    margin-bottom: 7.5vh;
+    
+    display: grid;
+    border-collapse: collapse;
+    justify-content: space-between;
+    grid-row-gap: 2.5vw;
+    grid-column-gap: 2.5vw;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    'left second'
+    'third right';
+
+}
+
+.imagequadgrid img {
+    width: 75%;
+    height: auto;
+    display: block;
+    margin: 0px auto;
+    padding: 0px;
+
+}
+
+#left {
+    grid-area: left;
+}
+
+#middle {
+    grid-area: middle;
+}
+
+#second {
+    grid-area: second;
+}
+
+#third {
+    grid-area: third;
+}
+
+#right {
+    grid-area: right;
+}
+
+.casetitle-container {
+    width: max-content;
+    place-self: center;
+
+    display: grid;
+    border-collapse: collapse;
+    justify-content: space-between;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas:
+    'casetitle'
+    'casedetails';
+
+}
+
+.casetitle {
+    grid-area: casetitle;
+}
+
+.casedetails-container {
+    grid-area: casedetails;
+}
+
+.casetitle {
+    font-family: Triester Sans;
+    font-size: 4vw;
+    font-weight: 400;
+    line-height: 4vw;
+    letter-spacing: 0em;
+    text-align: center;
+
+    margin: 0;
+    margin-top: 5vh;
+}
+
+.casedetails-container {
+
+    display: grid;
+    border-collapse: collapse;
+    justify-content: space-between;
+    grid-column-gap: 1vw;
+    grid-template-columns: 1fr min-content;
+    grid-template-rows: min-content;
+    grid-template-areas:
+    'caseline casedetails';
+
+}
+
+.casedetails {
+    grid-area: casedetails;
+}
+
+.caseline {
+    grid-area: caseline;
+}
+
+.casedetails {
+ 
+    display: grid;
+    border-collapse: collapse;
+    justify-content: space-between;
+    grid-column-gap: 1vw;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    'creators timeframe';
+   
+}
+
+.caseline {
+    grid-area: caseline;
+    place-self: center start;
+    
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, #5A00ED 5.31%, #FF5C00 96.3%);
+    border-radius: 16px;
+}
+
+.creators {
+    grid-area: creators;
+}
+
+.timeframe {
+    grid-area: timeframe;
+}
+
+.creators {
+    display: grid;
+    border-collapse: collapse;
+    justify-content: space-between;
+    grid-column-gap: 0.5vw;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+    'creatorsicon creatorstext';
+}
+
+#creatorsicon {
+    grid-area: creatorsicon;
+    place-self: center;
+
+    margin: 0;
+    padding: 0;
+}
+
+#creatorstext {
+    grid-area: creatorstext;
+    place-self: center;
+
+    margin: 0;
+    padding: 0;
+}
+
+.creators i {
+    
+    place-self: center;
+    grid-area: icon;
+    font-size: 1.2vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    top: 0;
+    bottom: 0;
+
+}
+
+.creators h3 {
+    place-self: center;
+    margin:0;
+    font-size: 1.2vw;
+    padding-right: 1.5vw;
+}
+
+.timeframe {
+    display: grid;
+    border-collapse: collapse;
+    justify-content: space-between;
+    grid-column-gap: 0.5vw;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+    'timeframeicon timeframetext';
+
+}
+
+#timeframeicon {
+    grid-area: timeframeicon;
+    place-self: center;
+
+    margin: 0;
+    padding: 0;
+}
+
+#timeframetext {
+    grid-area: timeframetext;
+    place-self: center;
+
+    margin: 0;
+    padding: 0;
+}
+    
+.timeframe i {
+    place-self: center;
+    grid-area: icon;
+    font-size: 1.2vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    top: 0;
+    bottom: 0;
+
+}
+
+.timeframe h3 {
+    place-self: center;
+    margin:0;
+    font-size: 1.2vw;
+    padding-right: 1.5vw;
+}
+
+.casetheme {
+    font-size: 1.25vw;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 1.25vw;
+    margin-left: 0.75vw;
+    letter-spacing: 0.3em;
+}
+
+.caseimage {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+
+}
+
+.caseabout {
+    width: 100%;
+}
+
+.caseimage img {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+}
+
+.casebody {
+    width: 60%;
+
+    margin: auto;
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+
+    display: grid;
+    border-collapse: collapse;
+    justify-content: space-between;
+    grid-template-columns: auto;
+    grid-template-rows: min-content 1fr;
+    grid-template-areas:
+    'overview'
+    'problem'
+    'objective';
+}
+
+#overview {
+    grid-area: overview;
+}
+
+#problem {
+    grid-area: problem;
+}
+
+#objective {
+    grid-area: objective;
+}
+
+.casebodytitle {
+    width: 100%;
+    
+    display: grid;
+    border-collapse: collapse;
+    justify-content: space-between;
+/*     grid-column-gap: 1vw;
+    grid-row-gap: 1vh; */
+    grid-template-columns: min-content;
+    grid-template-rows: auto;
+    grid-template-areas:
+    'casesection';
+
+}
+
+.casebodysection {
+    grid-area: casesection;
+    place-self: start;
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.5vw;
+    font-weight: 600;
+    line-height: 1.5vw;
+    letter-spacing: 0em;
+}
+
+
+.casebodyline {
+    grid-area: casebodyline;
+    place-self: center start;
+    
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, #5A00ED 5.31%, #FF5C00 96.3%);
+    border-radius: 16px;
+}
+
+.casebodytext {
+    text-align: justify;
+    font-size: 1vw;
+    font-weight: 400;
+    line-height: 1.4vw;
+    letter-spacing: 0em;
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+    padding: 0;
+}
+
+.casebodytext p {
+    margin: 0;
+    padding: 0;
+}
+
+/* .......................... Other Cases .......................... */
+
+.othercases {
+    width: 40%;
+    height: min-content;
+    display: grid;
+    margin: auto;
+    justify-items: center;
+    align-items: center;
+    place-self: center;
+    border-collapse: collapse;
+    justify-content: space-between;
+    grid-row-gap: 2.5vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    'othercasestitle'
+    'othercasescontent'
+
+}
+
+.othercasestitle {
+    grid-area: othercasestitle;
+
+    font-family: Triester Sans;
+    font-size: 2vw;
+    font-weight: 400;
+    line-height: 2vw;
+    letter-spacing: 0em;
+    text-align: center;
+
+    margin: 0 auto;
+}
+
+.othercasescontent {
+
+    display: grid;
+    width: 100%;
+
+    border-collapse: collapse;
+    justify-content: space-between;
+    align-items: center;
+    grid-column-gap: 2.5vw;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    'catchscan askcody'
+
+}
+
+#catchscan {
+    grid-area: catchscan;
+}
+
+#askcody {
+    grid-area: askcody;
+}
+
+.othercasecard {
+    display: grid;
+    border-collapse: collapse;
+    justify-content: space-between;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    'casetop'
+    'caseimage'
+    'casetitle';    
+}
+
+
+.othercasebody {
+
+    padding-top: 2.5vh;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    border-radius: 16px;
+
+    text-decoration: none;
+    color: #3A3A3A;
+
+    -webkit-transition-duration: 0.5s; /* Safari */
+    transition-duration: 0.5s;
+
+}
+
+.othercasebody:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    transform: translateY(-10px);
+}
+
+.othercasebody:active {
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    filter: none;
+}
+
+.othercasetop {
+
+    margin-left: 1vw;
+    margin-right: 1vw;
+
+    display: grid;
+    border-collapse: collapse;
+    justify-content: space-between;
+    grid-column-gap: 1em;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: min-content;
+    grid-template-areas:
+    'casenumber caseline';
+}
+
+.othercasenumber {
+    grid-area: casenumber;
+    
+    font-size: 1.5vw;
+    font-weight: 700;
+    line-height: 1.5vw;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.othercaseline {
+    grid-area: caseline;
+    place-self: center start;
+    
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, #5A00ED 5.31%, #FF5C00 96.3%);
+    border-radius: 16px;
+
+}
+
+.othercaseimage {
+    background: #E9E9E9;
+    border-radius: 16px;
+    padding: 1.5vw;
+}
+
+.othercaseimage img {
+    width: 100%;
+    height: 100%;
+}
+
+.othercasetitle h4 {
+    font-size: 1.25vw;
+    font-weight: 400;
+    line-height: 1.25vw;
+    letter-spacing: 0em;
+    text-align: center;
+    letter-spacing: 0.2em;
+
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+    padding: 0;
+}
+
+/* .......................... Footer .......................... */
+
+footer {
+    width: 100%;
+    height: auto;
+}
+
+
+#copyright{
+    float: right;
+    margin-right: 2.5vw;
+    margin-bottom: 2.5vh;
+
+}
+
+/* .......................... Responsiveness .......................... */
+
+@media only screen and (min-width: 2100px) {
+
+    .navbar-links li a {
+        font-size: 1.8rem;    
+    }
+
+}
+
+
+@media only screen and (min-width: 1600px) {
+
+    .navbar-links li a {
+        font-size: 1.4rem;
+    }
+
+}
+
+
+@media only screen and (max-width: 1600px) {
+    .navbar i {
+      margin-top: 0.75vh;
+    }
+  }
+
+@media only screen and (min-width: 1440px) {
+
+
+}
+
+@media only screen and (max-width: 1440px) {
+    .navbar i {
+      margin-top: 0.75vh;
+    }
+
+  }
+
+  @media only screen and (min-width: 1200px) {
+    
+  }
+  
+@media only screen and (max-width: 1000px) {
+    
+  }
+  
+
+  @media only screen and (max-width: 1000px) {
+    
+  }
+
+  @media only screen and (min-width: 768px) {
+
+    .navbar-links {
+        margin: auto;
+        height: 100%;
+    }
+
+    .navbar-links ul {
+        margin-top: 2.5vh;
+        margin-bottom: 2.5vh;
+    }
+
+}
+
+  @media only screen and (max-width: 768px) {
+
+    .superior {
+        margin-top: 5vh;
+    }
+
+    .case {
+        width: 100%;
+    }
+
+    .casetitle {
+        font-size: 7.5vw;
+        line-height: 7.5vw;
+    }
+
+    .casedetails-container {
+        grid-column-gap: 2vw;
+    }
+
+    .creators {
+        grid-column-gap: 0.75vw;
+    }
+
+    .creators i {
+        font-size: 2.4vw;
+        margin-top: 0.5vh;
+        margin-bottom: 0.5vh;
+    }
+
+    .creators h3 {
+        font-size: 2.4vw;
+    }
+
+    .timeframe {
+        grid-column-gap: 0.75vw;
+    }
+
+    .timeframe i {
+        font-size: 2.4vw;
+        margin-top: 0.5vh;
+        margin-bottom: 0.5vh;
+
+    }
+
+    .timeframe h3 {
+        font-size: 2.4vw;
+    }
+
+    .casetheme {
+        font-size: 2vw;
+        margin-bottom: 0;
+    }
+
+    .casebody {
+        width: 80%;
+
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .casebodysection {
+        font-size: 4vw;
+        line-height: 4vw;
+
+    }
+
+    .casebodytext {
+        font-size: 2.5vw;
+        line-height: 3.25vw;
+        font-weight: 300;
+
+    }
+
+    #highlight {
+        font-size: 2.75vw;
+        line-height: 3.5vw;
+    }
+
+    .casebody img {
+        width: 80%;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+
+    }
+
+    .imageduogrid {
+        margin-top: 2.5vh;
+        margin-bottom: 2.5vh;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        'left'
+        'right';
+
+    }
+
+    .imagetriogrid {
+        margin-top: 2.5vh;
+        margin-bottom: 2.5vh;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        'left'
+        'middle'
+        'right';
+
+    }
+
+    .imagequadgrid {
+        margin-top: 2.5vh;
+        margin-bottom: 2.5vh;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        'left'
+        'second'
+        'third'
+        'right';
+
+    }
+
+    .othercases {
+        width: 80%;
+
+    }
+
+    .othercasestitle {
+        font-size: 6.5vw;
+        line-height: 6.5vw;
+
+    }
+
+    .othercaseimage {
+        padding: 2vw;
+    }
+
+    .othercaseimage img {
+        border-radius: 8px;
+    }
+
+    .othercasescontent {
+        width: 70%;
+
+        grid-row-gap: 1.5vh;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        'catchscan'
+        'askcody';
+    }
+
+    .othercasenumber {
+        font-size: 3vw;
+        line-height: 3vw;
+    }
+
+    .othercasebody {
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        padding-left: 1vw;
+        padding-right: 1vw;
+
+    }
+
+    .othercasetitle h4 {
+        font-size: 2.75vw;
+        line-height: 2.75vw;
+        
+        margin-top: 1.5vh;
+        margin-bottom: 1.5vh;
+    }
+
+    #copyright {
+        font-size: 2vw;
+    }
+
+  }
+
+  @media only screen and (max-width: 425px) {
+
+    .navbar {
+        display: grid;
+        width: 100%;
+        justify-content: space-between;
+        align-items: start;
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        'logo hamburgermenu'
+    }
+
+    .navbar a {
+        place-self: center start;
+    }
+
+    #logo {
+        grid-area: looo;
+        width: 12.5vw;
+        height: 100%;
+        float: left;
+        margin-left: 2.5vw;
+        padding-left: 2vw;
+    }
+    
+    .logo img {
+        width: 12.5vw;
+        height: 100%;
+        margin-left: 2.5vw;
+        margin-top: 0vh;
+    }
+    
+    .navbar-hamburger {
+        width: 10vw;
+        margin-right: 2.5vw;
+    }
+
+    .navbar-links {
+        display: inline-block;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        padding-top: 10vh;
+        padding-bottom: 1.5vh;
+        right: -120%;
+        top: 0;
+        background-color: white;
+        color: #FFFFFF;
+        text-align: center;
+        transition: 0.5s;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+        
+        
+    }
+
+    .navbar-links ul {
+        margin-top: 15vh;
+    }
+
+    .navbar-links ul a {
+        transition-duration: 1s;
+        
+    }
+
+    .navbar-links.active {
+        display: inline-block;
+        width: 100%;
+        padding-top: 10vh;
+        padding-bottom: 1.5vh;
+        top: 0;
+        right: 0;
+        color: #E57200;
+        border-radius: 16px 0px 0px 16px;
+    }
+
+    .navbar-links.active ul {
+        margin-top: 15vh;
+        margin-right: 2.5vw;
+        padding: 0;
+    }
+
+
+    .navbar-links a {
+        margin-bottom: 2.5vh;
+        padding-top: 2.5vh;
+        padding-bottom: 2.5vh;
+        border: 1px solid #E9E9E9;
+        cursor: pointer;
+        border-radius: 16px;
+        -webkit-transition-duration: 0.5s; /* Safari */
+        transition-duration: 0.5s;
+        
+    }
+
+    .navbar-links a:hover {
+        color: white;
+    }
+      
+    .navbar-links a {
+        display: inline-block;
+        /* float: left;
+        margin-left: 7.5vw; */
+        width: 50%;
+    }
+
+    .navbar-links.active a {
+        display: inline-block;
+        /* float: left;
+        margin-left: 7.5vw */;
+        width: 50%;
+    }
+    
+    .navbar-hamburger {
+        place-self: center end;
+        display: block;
+        cursor: pointer;
+        float: right;
+        z-index: 5;
+    }
+
+    .bar {
+        background-color: #000000;
+
+    }
+
+    .navbar-hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .navbar-hamburger.active .bar:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .navbar-hamburger.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    
+    .casetitle {
+        font-size: 8.5vw;
+        line-height: 8.5vw;
+
+        margin-top: 6vh;
+        margin-bottom: 0.25vh;
+    }
+
+    .casedetails-container {
+        grid-column-gap: 2.5vw;
+    }
+
+    .creators {
+        grid-column-gap: 1.5vw;
+    }
+
+    .creators i {
+        font-size: 3vw;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .creators h3 {
+        font-size: 3vw;
+    }
+
+    .timeframe {
+        grid-column-gap: 1.5vw;
+    }
+
+    .timeframe i {
+        font-size: 3vw;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .timeframe h3 {
+        font-size: 3vw;
+    }
+
+    .casetheme {
+        font-size: 2.75vw;
+    }
+
+    .caseimage {
+        width: 85%;
+    }
+
+    .casebody img {
+        width: 85%;
+    }
+
+    .casebodysection {
+        font-size: 5vw;
+        line-height: 5vw;
+    }
+
+    .casebodytext {
+        font-size: 3.25vw;
+        line-height: 4.25vw;
+    }
+
+    #highlight {
+        font-size: 3.5vw;
+        line-height: 4.5vw;
+    }
+
+    .othercases {
+        width: 85%;
+    }
+
+    .othercasestitle {
+        font-size: 7.5vw;
+        line-height: 7.5vw;
+    }
+
+    .othercasescontent {
+        width: 75%
+    }
+
+    .othercasenumber {
+        font-size: 4vw;
+        line-height: 4vw;
+    }
+
+    .othercaseimage {
+        padding: 3.5vw;
+    }
+
+    .othercasetitle h4 {
+        font-size: 3.25vw;
+        line-height: 3.25vw;
+    }
+
+    #copyright {
+        font-size: 2.75vw;
+    }
+
+}
+
+  @media only screen and (max-width: 320px) {
+
+
+  }
