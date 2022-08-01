@@ -197,6 +197,7 @@ footer {
     grid-template-rows: auto;
     grid-template-areas:
     'casetitle'
+    'casedetails'
     'caseimage'
     'caseintro'
     'developementmethod'
@@ -213,8 +214,8 @@ footer {
     grid-area: casetitle;
 }
 
-.caseabout {
-    grid-area: caseabout;
+.casedetails {
+    grid-area: casedetails;
 }
 
 .caseimage {
@@ -378,16 +379,16 @@ footer {
     border-collapse: collapse;
     justify-content: space-between;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr auto;
+    grid-template-rows: auto;
     grid-template-areas:
     'casetitle'
-    'casedetails';
-
+    'casedetails'
 }
 
 .casetitle {
     grid-area: casetitle;
 }
+
 
 .casedetails-container {
     grid-area: casedetails;
@@ -427,16 +428,98 @@ footer {
 }
 
 .casedetails {
+
+    width: 60%;
+    margin: 0 auto;
+
+    margin-top: 0vh;
+    margin-bottom: 5vh;
  
     display: grid;
     border-collapse: collapse;
     justify-content: space-between;
-    grid-column-gap: 1vw;
-    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2.5vw;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-    'creators timeframe';
+    'year time role';
    
+}
+
+.year {
+    grid-area: year;
+}
+
+.time {
+    grid-area: time;
+}
+
+.role {
+    grid-area: role;
+}
+
+.year {
+
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    border-collapse: collapse;
+    grid-row-gap: 1vh;
+    grid-template-columns: auto;
+    grid-template-rows: min-content min-content min-content;
+    grid-template-areas:
+    'yeartitle'
+    'caseline'
+    'yeardetails';
+}
+
+.time {
+
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    border-collapse: collapse;
+    grid-row-gap: 1vh;
+    grid-template-columns: auto;
+    grid-template-rows: min-content min-content min-content;
+    grid-template-areas:
+    'timetitle'
+    'caseline'
+    'timedetails';
+}
+
+.role {
+
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    border-collapse: collapse;
+    grid-row-gap: 1vh;
+    grid-template-columns: auto;
+    grid-template-rows: min-content min-content min-content;
+    grid-template-areas:
+    'roletitle'
+    'caseline'
+    'roledetails';
+}
+
+.casedetails h5 {
+    margin: 0;
+    
+    font-size: 1vw;
+    font-weight: 300;
+    line-height: 1vw;
+}
+
+.casedetails h2 {
+    margin: 0;
+    
+    font-size: 1.5vw;
+    font-weight: 500;
+    line-height: 2.25vw;
 }
 
 .caseline {
@@ -449,105 +532,6 @@ footer {
     border-radius: 16px;
 }
 
-.creators {
-    grid-area: creators;
-}
-
-.timeframe {
-    grid-area: timeframe;
-}
-
-.creators {
-    display: grid;
-    border-collapse: collapse;
-    justify-content: space-between;
-    grid-column-gap: 0.5vw;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-template-areas:
-    'creatorsicon creatorstext';
-}
-
-#creatorsicon {
-    grid-area: creatorsicon;
-    place-self: center;
-
-    margin: 0;
-    padding: 0;
-}
-
-#creatorstext {
-    grid-area: creatorstext;
-    place-self: center;
-
-    margin: 0;
-    padding: 0;
-}
-
-.creators i {
-    
-    place-self: center;
-    grid-area: icon;
-    font-size: 1.2vw;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-    top: 0;
-    bottom: 0;
-
-}
-
-.creators h3 {
-    place-self: center;
-    margin:0;
-    font-size: 1.2vw;
-    padding-right: 1.5vw;
-}
-
-.timeframe {
-    display: grid;
-    border-collapse: collapse;
-    justify-content: space-between;
-    grid-column-gap: 0.5vw;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-template-areas:
-    'timeframeicon timeframetext';
-
-}
-
-#timeframeicon {
-    grid-area: timeframeicon;
-    place-self: center;
-
-    margin: 0;
-    padding: 0;
-}
-
-#timeframetext {
-    grid-area: timeframetext;
-    place-self: center;
-
-    margin: 0;
-    padding: 0;
-}
-    
-.timeframe i {
-    place-self: center;
-    grid-area: icon;
-    font-size: 1.2vw;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-    top: 0;
-    bottom: 0;
-
-}
-
-.timeframe h3 {
-    place-self: center;
-    margin:0;
-    font-size: 1.2vw;
-    padding-right: 1.5vw;
-}
 
 .casetheme {
     font-size: 1.25vw;
