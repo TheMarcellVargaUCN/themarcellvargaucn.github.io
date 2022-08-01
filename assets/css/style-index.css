@@ -33,43 +33,44 @@ body {
     src: url("../fonts/triester_sans_outline-webfont.woff2");
 }
 
+.js-scroll {
+    opacity: 0;
+    transition: opacity 1000ms;
+}
+  
+.js-scroll.scrolled {
+    opacity: 1;
+}
+
 
 /* .......................... Main .......................... */
 
 .superior {
-
-    margin-top: 20vmax;
 
     width: 100%;
     height: 100%;
     display: grid;
     border-collapse: collapse;
     justify-content: space-between;
-    grid-row-gap: 10vh;
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-    'index'
-    'projects'
-    'contact'
-    'footer';
+    grid-template-rows: auto 10vh auto 10vh auto 0vh auto;
     
 }
 
 .index-grid-container {
-    grid-area: index;
+    grid-row-start: 1;
 }
 
 .projects {
-    grid-area: projects;
+    grid-row-start: 3;
 }
 
-.contact {
-    grid-area: contact;
+.contactcontainer {
+    grid-row-start: 5;
 }
 
 footer {
-    grid-area: footer;
+    grid-row-start: 7;
 }
 
 /* .......................... Navigation Bar .......................... */
@@ -84,8 +85,8 @@ footer {
     justify-content: space-between;
     align-items: center;
     z-index: 30;
+    background: #FFFFFF;
     border-bottom: 1px solid #E9E9E9;
-    background-color: #FFFFFF;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
@@ -312,9 +313,9 @@ footer {
 
     position: relative;
     padding: 10px 20px;
-    background: #fff;
+    background: #FFFFFF;
     margin: 5px;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
 .index-background::after {
@@ -328,12 +329,6 @@ footer {
     margin: -5px;
     border-radius: inherit;
     background-image: linear-gradient(270deg, #5A00ED 5.31%, #FF5C00 96.3%);
-
-    padding-top: 0px;
-    padding-left: 0px;
-    margin-top: 0px;
-    margin-left: 0px;
-
 }
 
 
@@ -351,7 +346,7 @@ footer {
     grid-template-rows: auto;
     grid-template-areas:
     '. profilepicture';
-    background: #E9E9E9;
+    background-color: #E9E9E9;
     border-radius: 16px;
 }
 
@@ -405,8 +400,8 @@ footer {
     height: 100%;
 
     grid-area: lower-slab;
+    background-color: #E9E9E9;
 
-    background: #E9E9E9;
     border-radius: 16px;
 
     margin-bottom: 10px;
@@ -417,6 +412,7 @@ footer {
 .projects {
     width: 80%;
     margin: 0 auto;
+
 }
 
 .projects-title {
@@ -455,6 +451,9 @@ footer {
 }
 
 .case {
+    
+    height: 100%;
+    
     display: grid;
     border-collapse: collapse;
     justify-content: space-between;
@@ -467,10 +466,13 @@ footer {
 }
 
 .casebody {
+    
 
-    padding-top: 2.5vh;
-    padding-left: 1.5vw;
-    padding-right: 1.5vw;
+    background-color: #E9E9E9;
+
+    margin-top: 2.5vh;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
     border-radius: 16px;
 
     text-decoration: none;
@@ -529,7 +531,7 @@ footer {
 }
 
 .caseimage {
-    background: #E9E9E9;
+    background-color: #E9E9E9;
     border-radius: 16px;
     padding: 1.5vw;
 }
@@ -537,29 +539,51 @@ footer {
 .caseimage img {
     width: 100%;
     height: 100%;
+
+    border-radius: 6px;
 }
 
 
 .casetitle h4 {
     font-size: 1.25vw;
     font-weight: 400;
-    line-height: 1.25vw;
-    letter-spacing: 0em;
+    line-height: 1.55vw;
     text-align: center;
     letter-spacing: 0.2em;
 
-    margin-top: 2.5vh;
+    margin-top: 0;
     margin-bottom: 2.5vh;
-    padding: 0;
+    padding-right: 2.5vh;
+    padding-left: 2.5vh;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 
 /* .......................... Contact .......................... */
 
+.contactcontainer {
+    width: 100%;
+    margin: 0 auto;
+
+    background-color: #212121;
+
+}
+
 .contact {
     width: 80%;
     margin: 0 auto;
+    margin-top: 10vh;
 
+}
+
+.contacttop {
+
+    width: 100%;
+    height: 2.5vh;
+
+    background-color: #FFFFFF;
+    border-radius: 0px 0px 25px 25px;
 }
 
 .contacttitle {
@@ -569,6 +593,20 @@ footer {
     line-height: 4vw;
     letter-spacing: 0em;
     text-align: left;
+
+    color: #ffffff;
+
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+}
+
+.contacttitle h3 {
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+}
+
+#caseline2 {
+    width: 20%
 }
 
 .contactdetails {
@@ -611,14 +649,12 @@ footer {
 .contactemail i {
     font-size: 2.5vw;
     text-align: center;
-    background: -webkit-linear-gradient(270deg, #5A00ED 5.31%, #FF5C00 96.3%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #ffffff;
 }
 
 .contactemail a {
     text-decoration: none;
-    color: #3A3A3A;
+    color: #ffffff;
 }
 
 .contactlinkedin {
@@ -649,15 +685,15 @@ footer {
 .contactlinkedin i {
     font-size: 2.5vw;
     text-align: center;
-    background: -webkit-linear-gradient(270deg, #5A00ED 5.31%, #FF5C00 96.3%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #ffffff;
+
 }
 
 .contactlinkedin a {
     width: fit-content;
     text-decoration: none;
-    color: #3A3A3A;
+    color: #ffffff;
+
 }
 
 
@@ -676,7 +712,7 @@ footer {
     height: 2px;
     bottom: 0;
     left: 0;
-    background: #000000;
+    background: #FFFFFF;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
@@ -706,7 +742,7 @@ footer {
     height: 2px;
     bottom: 0;
     left: 0;
-    background: #000000;
+    background: #FFFFFF;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
@@ -725,9 +761,11 @@ footer {
 /* .......................... Footer .......................... */
 
 footer {
-    grid-area: footer;
     width: 100%;
     height: auto;
+
+    background-color: #212121;
+    color: #ffffff;
 }
 
 
@@ -767,7 +805,7 @@ footer {
 @media only screen and (min-width: 1440px) {
 
     .superior {
-        margin-top: 20vmax;
+        margin-top: 19vmax;
     }
 
 }
@@ -777,13 +815,14 @@ footer {
       margin-top: 0.75vh;
     }
 
-    .superior {
-        margin-top: 22.5vmax;
-    }
   }
 
   @media only screen and (min-width: 1200px) {
     
+    .superior {
+        margin-top: 20vmax;
+    }
+
   }
   
 @media only screen and (max-width: 1000px) {
@@ -807,8 +846,12 @@ footer {
         margin-bottom: 2.5vh;
     }
 
+    .superior {
+        margin-top: 22.5vmax;
+    }
+
     .arrow {
-        font-size: 2.5vw;
+        font-size: 2vw;
     }
 
 }
@@ -816,7 +859,7 @@ footer {
   @media only screen and (max-width: 768px) {
 
     .superior {
-        margin-top: 30vmax;
+        margin-top: 40vmax;
         
     }
 
@@ -939,6 +982,12 @@ footer {
     .contact {
         width: 90%;
     }
+    
+    #caseline2 {
+        width: 40%;
+        place-self: start center;
+        margin: 0 auto;
+    }
 
     .contacttitle {
         font-size: 5vw;
@@ -974,7 +1023,7 @@ footer {
     }
 
     .arrow {
-        font-size: 4vw;
+        font-size: 3vw;
     }
 
   }
@@ -1320,7 +1369,7 @@ footer {
     }
 
     .arrow {
-        font-size: 4vw;
+        font-size: 3vw;
         display: none
     }
     

@@ -286,8 +286,8 @@ footer {
     width: 75%;
     display: block;
     margin: 0px auto;
-    margin-top: 7.5vh;
-    margin-bottom: 7.5vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 
     border-radius: 16px;
 
@@ -317,6 +317,8 @@ footer {
     display: block;
     margin: 0px auto;
     padding: 0;
+
+    border-radius: 6px;
 }
 
 .imagetriogrid {
@@ -343,6 +345,8 @@ footer {
     display: block;
     margin: 0px auto;
     padding: 0;
+
+    border-radius: 6px;
 }
 
 
@@ -373,6 +377,8 @@ footer {
     margin: 0px auto;
     padding: 0px;
 
+    border-radius: 6px;
+
 }
 
 #left {
@@ -396,7 +402,7 @@ footer {
 }
 
 .casetitle-container {
-    width: max-content;
+    width: 60%;
     place-self: center;
 
     display: grid;
@@ -424,7 +430,7 @@ footer {
     font-weight: 400;
     line-height: 4vw;
     letter-spacing: 0em;
-    text-align: center;
+    text-align: left;
 
     margin: 0;
     margin-top: 5vh;
@@ -576,10 +582,9 @@ footer {
 
 .casetheme {
     font-size: 1.25vw;
-    font-weight: 500;
+    font-weight: 400;
     margin-top: 0;
     margin-bottom: 1.25vw;
-    margin-left: 0.75vw;
     letter-spacing: 0.3em;
 }
 

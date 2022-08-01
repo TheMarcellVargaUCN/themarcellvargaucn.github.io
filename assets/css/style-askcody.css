@@ -371,7 +371,7 @@ footer {
 }
 
 .casetitle-container {
-    width: max-content;
+    width: 60%;
     place-self: center;
 
     display: grid;
@@ -399,7 +399,7 @@ footer {
     font-weight: 400;
     line-height: 4vw;
     letter-spacing: 0em;
-    text-align: center;
+    text-align: left;
 
     margin: 0;
     margin-top: 5vh;
@@ -551,10 +551,9 @@ footer {
 
 .casetheme {
     font-size: 1.25vw;
-    font-weight: 500;
+    font-weight: 400;
     margin-top: 0;
     margin-bottom: 1.25vw;
-    margin-left: 0.75vw;
     letter-spacing: 0.3em;
 }
 
