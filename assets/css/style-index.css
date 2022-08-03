@@ -825,8 +825,12 @@ footer {
 
   }
   
-@media only screen and (max-width: 1000px) {
-    
+@media only screen and (max-width: 1200px) {
+
+    .superior {
+        margin-top: 22.5vmax;
+    }
+
   }
   
 
@@ -844,10 +848,6 @@ footer {
     .navbar-links ul {
         margin-top: 2.5vh;
         margin-bottom: 2.5vh;
-    }
-
-    .superior {
-        margin-top: 22.5vmax;
     }
 
     .arrow {
