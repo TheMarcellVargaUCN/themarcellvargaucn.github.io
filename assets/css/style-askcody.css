@@ -200,6 +200,11 @@ footer {
     'casedetails'
     'caseimage'
     'caseintro'
+    'benchmarking'
+    'userresearch'
+    'empathymap'
+    'personas'
+    'userjourney'
     'developementmethod'
     'empathize'
     'define'
@@ -226,8 +231,28 @@ footer {
     grid-area: caseintro;
 }
 
+#benchmarking {
+    grid-area: benchmarking;
+}
+
+#userresearch {
+    grid-area: userresearch;
+}
+
+#empathymap {
+    grid-area: empathymap;
+}
+
+#personas {
+    grid-area: personas;
+}
+
+#userjourney {
+    grid-area: userjourney;
+}
+
 #developementmethod {
-    grid-area: developementmethod;
+    grid-area:developementmethod;
 }
 
 #empathize {
@@ -262,8 +287,8 @@ footer {
     width: 75%;
     display: block;
     margin: 0px auto;
-    margin-top: 7.5vh;
-    margin-bottom: 7.5vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 
     border-radius: 16px;
 
@@ -293,6 +318,8 @@ footer {
     display: block;
     margin: 0px auto;
     padding: 0;
+
+    border-radius: 6px;
 }
 
 .imagetriogrid {
@@ -319,6 +346,8 @@ footer {
     display: block;
     margin: 0px auto;
     padding: 0;
+
+    border-radius: 6px;
 }
 
 
@@ -348,6 +377,8 @@ footer {
     display: block;
     margin: 0px auto;
     padding: 0px;
+
+    border-radius: 6px;
 
 }
 
@@ -437,7 +468,6 @@ footer {
  
     display: grid;
     border-collapse: collapse;
-    justify-content: space-between;
     grid-column-gap: 2.5vw;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
@@ -518,8 +548,8 @@ footer {
     margin: 0;
     
     font-size: 1.5vw;
-    font-weight: 500;
-    line-height: 2.25vw;
+    font-weight: 400;
+    line-height: 2vw;
 }
 
 .caseline {
@@ -532,11 +562,110 @@ footer {
     border-radius: 16px;
 }
 
+.creators {
+    grid-area: creators;
+}
+
+.timeframe {
+    grid-area: timeframe;
+}
+
+.creators {
+    display: grid;
+    border-collapse: collapse;
+    justify-content: space-between;
+    grid-column-gap: 0.5vw;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+    'creatorsicon creatorstext';
+}
+
+#creatorsicon {
+    grid-area: creatorsicon;
+    place-self: center;
+
+    margin: 0;
+    padding: 0;
+}
+
+#creatorstext {
+    grid-area: creatorstext;
+    place-self: center;
+
+    margin: 0;
+    padding: 0;
+}
+
+.creators i {
+    
+    place-self: center;
+    grid-area: icon;
+    font-size: 1.2vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    top: 0;
+    bottom: 0;
+
+}
+
+.creators h3 {
+    place-self: center;
+    margin:0;
+    font-size: 1.2vw;
+    padding-right: 1.5vw;
+}
+
+.timeframe {
+    display: grid;
+    border-collapse: collapse;
+    justify-content: space-between;
+    grid-column-gap: 0.5vw;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+    'timeframeicon timeframetext';
+
+}
+
+#timeframeicon {
+    grid-area: timeframeicon;
+    place-self: center;
+
+    margin: 0;
+    padding: 0;
+}
+
+#timeframetext {
+    grid-area: timeframetext;
+    place-self: center;
+
+    margin: 0;
+    padding: 0;
+}
+    
+.timeframe i {
+    place-self: center;
+    grid-area: icon;
+    font-size: 1.2vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    top: 0;
+    bottom: 0;
+
+}
+
+.timeframe h3 {
+    place-self: center;
+    margin:0;
+    font-size: 1.2vw;
+    padding-right: 1.5vw;
+}
 
 .casetheme {
     font-size: 1.25vw;
     font-weight: 400;
-    margin-top: 0;
+    margin-top: 0.25vw;
     margin-bottom: 1.25vw;
     letter-spacing: 0.3em;
 }
@@ -838,6 +967,7 @@ footer {
     .navbar i {
       margin-top: 0.75vh;
     }
+
   }
 
 @media only screen and (min-width: 1440px) {
@@ -848,6 +978,10 @@ footer {
 @media only screen and (max-width: 1440px) {
     .navbar i {
       margin-top: 0.75vh;
+    }
+
+    .superior {
+        margin-top: 7.5vh;
     }
 
   }
@@ -881,10 +1015,6 @@ footer {
 
   @media only screen and (max-width: 768px) {
 
-    .superior {
-        margin-top: 5vh;
-    }
-
     .case {
         width: 100%;
     }
@@ -892,10 +1022,17 @@ footer {
     .casetitle {
         font-size: 7.5vw;
         line-height: 7.5vw;
+
+        margin-top: 2.5vh;
+        margin-bottom: 0.5vh;
     }
 
     .casedetails-container {
         grid-column-gap: 2vw;
+    }
+
+    .casedetails {
+        width: 60%;
     }
 
     .creators {
@@ -928,8 +1065,52 @@ footer {
     }
 
     .casetheme {
-        font-size: 2vw;
+        font-size: 2.5vw;
+        line-height: 2.5vw;
         margin-bottom: 0;
+    }
+
+    .casedetails {
+        width: 60%;
+        margin-bottom: 2.5vh;
+
+
+        grid-row-gap: 0vw;
+        grid-template-columns: auto;
+        grid-template-rows: min-content min-content min-content;
+        grid-template-areas:
+        'year'
+        'time'
+        'role';
+    }
+
+    .casedetails h5 {
+        font-size: 2.5vw;
+        line-height: 2.5vw;
+        margin-top: 2.5vw;
+        margin-bottom: 0.25vh;
+    }
+
+    .casedetails h2 {
+        font-size: 3vw;
+        line-height: 3.5vw;
+        margin-top: 1vw;
+        font-weight: 400;
+    }
+
+    .year {
+        grid-row-gap: 0vw;
+        
+    }
+
+    .time {
+        grid-row-gap: 0vw;
+        
+    }
+
+    .role {
+        grid-row-gap: 0vw;
+            
     }
 
     .casebody {

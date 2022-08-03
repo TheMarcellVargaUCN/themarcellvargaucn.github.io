@@ -265,7 +265,7 @@ footer {
 }
 
 #mockup {
-    grid-area: mockup;
+    grid-area: mockup
 }
 
 #responsive {
@@ -292,8 +292,8 @@ footer {
     width: 75%;
     display: block;
     margin: 0px auto;
-    margin-top: 7.5vh;
-    margin-bottom: 7.5vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 
     border-radius: 16px;
 
@@ -323,6 +323,8 @@ footer {
     display: block;
     margin: 0px auto;
     padding: 0;
+
+    border-radius: 6px;
 }
 
 .imagetriogrid {
@@ -349,6 +351,8 @@ footer {
     display: block;
     margin: 0px auto;
     padding: 0;
+
+    border-radius: 6px;
 }
 
 
@@ -378,6 +382,8 @@ footer {
     display: block;
     margin: 0px auto;
     padding: 0px;
+
+    border-radius: 6px;
 
 }
 
@@ -467,7 +473,6 @@ footer {
  
     display: grid;
     border-collapse: collapse;
-    justify-content: space-between;
     grid-column-gap: 2.5vw;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
@@ -548,8 +553,8 @@ footer {
     margin: 0;
     
     font-size: 1.5vw;
-    font-weight: 500;
-    line-height: 2.25vw;
+    font-weight: 400;
+    line-height: 2vw;
 }
 
 .caseline {
@@ -665,7 +670,7 @@ footer {
 .casetheme {
     font-size: 1.25vw;
     font-weight: 400;
-    margin-top: 0;
+    margin-top: 0.25vw;
     margin-bottom: 1.25vw;
     letter-spacing: 0.3em;
 }
@@ -967,6 +972,7 @@ footer {
     .navbar i {
       margin-top: 0.75vh;
     }
+
   }
 
 @media only screen and (min-width: 1440px) {
@@ -977,6 +983,10 @@ footer {
 @media only screen and (max-width: 1440px) {
     .navbar i {
       margin-top: 0.75vh;
+    }
+
+    .superior {
+        margin-top: 7.5vh;
     }
 
   }
@@ -1010,10 +1020,6 @@ footer {
 
   @media only screen and (max-width: 768px) {
 
-    .superior {
-        margin-top: 5vh;
-    }
-
     .case {
         width: 100%;
     }
@@ -1021,10 +1027,17 @@ footer {
     .casetitle {
         font-size: 7.5vw;
         line-height: 7.5vw;
+
+        margin-top: 2.5vh;
+        margin-bottom: 0.5vh;
     }
 
     .casedetails-container {
         grid-column-gap: 2vw;
+    }
+
+    .casedetails {
+        width: 60%;
     }
 
     .creators {
@@ -1057,8 +1070,52 @@ footer {
     }
 
     .casetheme {
-        font-size: 2vw;
+        font-size: 2.5vw;
+        line-height: 2.5vw;
         margin-bottom: 0;
+    }
+
+    .casedetails {
+        width: 60%;
+        margin-bottom: 2.5vh;
+
+
+        grid-row-gap: 0vw;
+        grid-template-columns: auto;
+        grid-template-rows: min-content min-content min-content;
+        grid-template-areas:
+        'year'
+        'time'
+        'role';
+    }
+
+    .casedetails h5 {
+        font-size: 2.5vw;
+        line-height: 2.5vw;
+        margin-top: 2.5vw;
+        margin-bottom: 0.25vh;
+    }
+
+    .casedetails h2 {
+        font-size: 3vw;
+        line-height: 3.5vw;
+        margin-top: 1vw;
+        font-weight: 400;
+    }
+
+    .year {
+        grid-row-gap: 0vw;
+        
+    }
+
+    .time {
+        grid-row-gap: 0vw;
+        
+    }
+
+    .role {
+        grid-row-gap: 0vw;
+            
     }
 
     .casebody {
