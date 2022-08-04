@@ -200,11 +200,6 @@ footer {
     'casedetails'
     'caseimage'
     'caseintro'
-    'benchmarking'
-    'userresearch'
-    'empathymap'
-    'personas'
-    'userjourney'
     'developementmethod'
     'empathize'
     'define'
@@ -229,26 +224,6 @@ footer {
 
 #caseintro {
     grid-area: caseintro;
-}
-
-#benchmarking {
-    grid-area: benchmarking;
-}
-
-#userresearch {
-    grid-area: userresearch;
-}
-
-#empathymap {
-    grid-area: empathymap;
-}
-
-#personas {
-    grid-area: personas;
-}
-
-#userjourney {
-    grid-area: userjourney;
 }
 
 #developementmethod {
@@ -987,19 +962,29 @@ footer {
   }
 
   @media only screen and (min-width: 1200px) {
+
+    .casebodysection {
+        font-size: 2vw;
+        line-height: 2vw;
+    }
+
+    .casebodytext p {
+        font-size: 1vw;
+        line-height: 1.4vw;
+    }
+
+    #highlight {
+        font-size: 1.5vw;
+        line-height: 2vw;   
+    }
     
   }
   
-@media only screen and (max-width: 1000px) {
-    
-  }
   
 
-  @media only screen and (max-width: 1000px) {
-    
-  }
+  
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (max-width: 1200px) {
 
     .navbar-links {
         margin: auto;
@@ -1013,7 +998,29 @@ footer {
 
 }
 
+ @media only screen and (max-width: 1200px) and (min-width: 768px) {
+    .casebodysection {
+        font-size: 2vw;
+        line-height: 2vw;
+    }
+
+    .casebodytext p {
+        font-size: 1.25vw;
+        line-height: 1.75vw;
+    }
+
+    #highlight {
+        font-size: 1.5vw;
+        line-height: 2vw;   
+    }
+
+ }
+
   @media only screen and (max-width: 768px) {
+
+    .superior {
+        margin-top: 10vh;
+    }
 
     .case {
         width: 100%;
@@ -1025,6 +1032,10 @@ footer {
 
         margin-top: 2.5vh;
         margin-bottom: 0.5vh;
+    }
+
+    .casetitle-container {
+        width: 70%;
     }
 
     .casedetails-container {
@@ -1071,7 +1082,7 @@ footer {
     }
 
     .casedetails {
-        width: 60%;
+        width: 70%;
         margin-bottom: 2.5vh;
 
 
@@ -1242,6 +1253,10 @@ footer {
 
   @media only screen and (max-width: 425px) {
 
+    .superior {
+        margin-top: 5vh;
+    }
+
     .navbar {
         display: grid;
         width: 100%;
@@ -1381,6 +1396,9 @@ footer {
         transform: translateY(-8px) rotate(-45deg);
     }
 
+    .casetitle-container {
+        width: 70%;
+    }
     
     .casetitle {
         font-size: 8.5vw;
@@ -1392,6 +1410,10 @@ footer {
 
     .casedetails-container {
         grid-column-gap: 2.5vw;
+    }
+
+    .casedetails {
+        width: 70%;
     }
 
     .creators {
