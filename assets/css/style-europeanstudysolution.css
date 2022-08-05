@@ -1005,23 +1005,6 @@ footer {
     
   }
   
-  
-
-  
-
-  @media only screen and (max-width: 1200px) {
-
-    .navbar-links {
-        margin: auto;
-        height: 100%;
-    }
-
-    .navbar-links ul {
-        margin-top: 2.5vh;
-        margin-bottom: 2.5vh;
-    }
-
-}
 
  @media only screen and (max-width: 1200px) and (min-width: 768px) {
     .casebodysection {
@@ -1040,6 +1023,20 @@ footer {
     }
 
  }
+
+
+  @media only screen and (min-width: 768px) {
+    .navbar-links {
+        margin: auto;
+        height: 100%;
+    }
+
+    .navbar-links ul {
+        margin-top: 2.5vh;
+        margin-bottom: 2.5vh;
+    }
+
+  }
 
   @media only screen and (max-width: 768px) {
 
