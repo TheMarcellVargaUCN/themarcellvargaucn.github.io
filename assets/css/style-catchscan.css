@@ -1250,7 +1250,7 @@ footer {
   @media only screen and (max-width: 425px) {
 
     .superior {
-        margin-top: 5vh;
+        margin-top: 7.5vh;
     }
 
     .navbar {
@@ -1412,6 +1412,20 @@ footer {
         width: 70%;
     }
 
+    .casedetails h5 {
+        font-size: 3.25vw;
+        line-height: 3.25vw;
+        margin-top: 2.5vw;
+        margin-bottom: 0.25vh;
+    }
+
+    .casedetails h2 {
+        font-size: 4vw;
+        line-height: 4vw;
+        margin-top: 1vw;
+        font-weight: 400;
+    }
+
     .creators {
         grid-column-gap: 1.5vw;
     }
@@ -1438,10 +1452,12 @@ footer {
 
     .timeframe h3 {
         font-size: 3vw;
+        line-height: 3vw;
     }
 
     .casetheme {
-        font-size: 2.75vw;
+        font-size: 3.5vw;
+        line-height: 3.5vw;
     }
 
     .caseimage {
@@ -1453,17 +1469,17 @@ footer {
     }
 
     .casebodysection {
-        font-size: 5vw;
-        line-height: 5vw;
+        font-size: 5.5vw;
+        line-height: 5.5vw;
     }
 
     .casebodytext {
-        font-size: 3.25vw;
-        line-height: 4.25vw;
+        font-size: 3.5vw;
+        line-height: 4.5vw;
     }
 
     #highlight {
-        font-size: 3.5vw;
+        font-size: 4vw;
         line-height: 4.5vw;
     }
 
