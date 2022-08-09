@@ -3,7 +3,7 @@
 html {
     height: 100%;
     margin: 0;
-    scoll-behavior: smooth;
+    scroll-behavior: smooth;
     line-height: 1.2;
 }
 
@@ -54,7 +54,6 @@ p {
     height: 100%;
     display: grid;
     border-collapse: collapse;
-    justify-content: space-between;
     grid-row-gap: 10vh;
     grid-template-columns: auto;
     grid-template-rows: 1fr min-content min-content;

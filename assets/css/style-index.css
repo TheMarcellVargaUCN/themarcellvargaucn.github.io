@@ -6,7 +6,7 @@
 html {
     height: 100%;
     margin: 0;
-    scoll-behavior: smooth;
+    scroll-behavior: smooth;
     line-height: 1.2;
 }
 
@@ -24,7 +24,7 @@ body {
 }
 
 @font-face {
-    font-family: 'Triester Sans';°
+    font-family: 'Triester Sans';
     src: url("../fonts/triester_sans-webfont.woff2");
 }
 
@@ -51,7 +51,6 @@ body {
     height: 100%;
     display: grid;
     border-collapse: collapse;
-    justify-content: space-between;
     grid-template-columns: 1fr;
     grid-template-rows: auto 10vh auto 10vh auto 0vh auto;
     
