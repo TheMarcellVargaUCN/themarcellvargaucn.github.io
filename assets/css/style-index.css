@@ -560,11 +560,11 @@ footer {
     'casetitle casetitlearrow'
 }
 
-#casetitle {
+.casetitle {
     grid-area: casetitle;
 }
 
-#casetitlearrow {
+.casetitlearrow {
     grid-area: casetitlearrow;
 }
 
@@ -1009,6 +1009,7 @@ footer {
     }
 
     .caseimage {
+        border-radius: 8px;
         padding: 2.5vw;
         padding-bottom: 0;
     }
@@ -1378,7 +1379,7 @@ footer {
     }
 
     .caseimage {
-        padding: 2.5vw;
+        padding: 3.5vw;
         padding-bottom: 0;
     }
 
