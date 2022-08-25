@@ -581,7 +581,7 @@ footer {
 }
 
 .casetitlesub {
-    font-size: 0.75vw;
+    font-size: 0.8vw;
     font-weight: 300;
     line-height: 1vw;
     letter-spacing: 0.3em;
@@ -1027,8 +1027,8 @@ footer {
     }
 
     .casetitlesub {
-        font-size: 1.5vw;
-        line-height: 1.5vw;
+        font-size: 1.75vw;
+        line-height: 2vw;
     }
 
     .casetitlearrow {
