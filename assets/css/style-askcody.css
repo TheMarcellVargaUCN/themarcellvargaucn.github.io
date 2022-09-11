@@ -54,7 +54,6 @@ p {
     height: 100%;
     display: grid;
     border-collapse: collapse;
-    grid-row-gap: 10vh;
     grid-template-columns: auto;
     grid-template-rows: 1fr min-content min-content;
     grid-template-areas:
@@ -184,14 +183,13 @@ footer {
 
     grid-area: case;
 
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 
 
     display: grid;
     border-collapse: collapse;
     justify-content: space-between;
-    grid-row-gap: 2.5vh;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas:
@@ -253,8 +251,10 @@ footer {
     grid-area: summary;
 }
 
+
+
 .casebody img {
-    width: 75%;
+    width: 70%;
     display: block;
     margin: 0px auto;
     margin-top: 5vh;
@@ -373,7 +373,7 @@ footer {
 }
 
 .casetitle-container {
-    width: 60%;
+    width: 50%;
     place-self: center;
 
     display: grid;
@@ -430,7 +430,7 @@ footer {
 
 .casedetails {
 
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
 
     margin-top: 0vh;
@@ -640,39 +640,92 @@ footer {
     letter-spacing: 0.3em;
 }
 
-.caseimage {
-    width: 80%;
+.caseimagecontainer {
+    width: 100%;
     height: 100%;
     margin: auto;
+    display: grid;
+    border-collapse: collapse;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 0;
+    grid-template-areas:
+    'caseimagetop'
+    'caseimagebottom';
+}
 
+.caseimagetop {
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    justify-content: end;
+}
+
+.caseimagetop svg {
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    display: block;
+}
+
+
+.caseimagebottom {
+    background-color: #F8F8F8;
 }
 
 .caseabout {
     width: 100%;
 }
 
+.caseimage {
+    width: 65%;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+
+
+}
+
 .caseimage img {
+
     width: 100%;
     height: 100%;
     border-radius: 16px;
+    
 }
 
 .casebody {
-    width: 60%;
+    width: 100%;
 
     margin: auto;
-    margin-top: 2.5vh;
-    margin-bottom: 2.5vh;
+    background-color: #FFFFFF;    
+
+}
+
+.casebodyalt {
+    background-color: #F8F8F8;
+}
+
+.casebodycontainer {
+
+    width: 100%;
+    
+    margin: auto;
+
+    padding-top: 5vh;
+    padding-bottom: 2.5vh;
 
     display: grid;
     border-collapse: collapse;
-    justify-content: space-between;
     grid-template-columns: auto;
     grid-template-rows: min-content 1fr;
     grid-template-areas:
     'overview'
     'problem'
     'objective';
+
 }
 
 #overview {
@@ -688,11 +741,11 @@ footer {
 }
 
 .casebodytitle {
-    width: 100%;
+    width: 50%;
+    margin: 0 auto;
     
     display: grid;
     border-collapse: collapse;
-    justify-content: space-between;
 /*     grid-column-gap: 1vw;
     grid-row-gap: 1vh; */
     grid-template-columns: min-content;
@@ -715,7 +768,7 @@ footer {
 }
 
 
-.casebodyline {
+/* .casebodyline {
     grid-area: casebodyline;
     place-self: center start;
     
@@ -723,9 +776,12 @@ footer {
     height: 2px;
     background: linear-gradient(270deg, #5A00ED 5.31%, #FF5C00 96.3%);
     border-radius: 16px;
-}
+} */
 
 .casebodytext {
+    width: 50%;
+    margin: 0 auto;
+
     text-align: justify;
     font-size: 1vw;
     font-weight: 300;
@@ -744,10 +800,18 @@ footer {
 /* .......................... Other Cases .......................... */
 
 .othercases {
-    width: 40%;
+
+    background-color: #F8F8F8;
+
+    width: 100%;
     height: min-content;
     display: grid;
     margin: auto;
+
+    margin-top: 2.5vh;
+    padding-top: 2.5vh;
+    padding-bottom: 5vh;
+
     justify-items: center;
     align-items: center;
     place-self: center;
@@ -765,6 +829,8 @@ footer {
 .othercasestitle {
     grid-area: othercasestitle;
 
+    width: 40%;
+
     font-family: Triester Sans;
     font-size: 2vw;
     font-weight: 400;
@@ -778,7 +844,7 @@ footer {
 .othercasescontent {
 
     display: grid;
-    width: 100%;
+    width: 40%;
 
     border-collapse: collapse;
     justify-content: space-between;
@@ -814,7 +880,8 @@ footer {
 
 .othercasebody {
 
-    background-color: #E9E9E9;
+    background-color: #FFFFFF;
+    box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.25);
 
     padding: 1vw;
     padding-bottom: 0;
@@ -831,7 +898,7 @@ footer {
 
 .othercasebody:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    transform: translateY(-10px);
+    transform: translateY(-5px);
 }
 
 .othercasebody:active {
@@ -877,7 +944,7 @@ footer {
 }
 
 .othercaseimage {
-    background: #E9E9E9;
+    background: #FFFFFF;
     border-radius: 16px;
 }
 
@@ -885,7 +952,7 @@ footer {
     width: 100%;
     height: 100%;
 
-    border-radius: 6px;
+    border-radius: 16px;
 }
 
 .othercasetitlecontainer {
@@ -945,7 +1012,7 @@ footer {
 .contacttop {
     width: 100%;
     height: 2.5vh;
-    background-color: #FFFFFF;
+    background-color: #F8F8F8;
     border-radius: 0px 0px 25px 25px;
 }
 
@@ -1021,7 +1088,7 @@ footer {
     }
 
     #highlight {
-        font-size: 1.5vw;
+        font-size: 1.25vw;
         line-height: 2vw;   
     }
     
@@ -1170,7 +1237,7 @@ footer {
     }
 
     .casebody {
-        width: 80%;
+        width: 100%;
 
         margin-top: 0;
         margin-bottom: 0;
@@ -1182,7 +1249,14 @@ footer {
 
     }
 
+    .casebodytitle {
+        width: 80%;
+    }
+
     .casebodytext {
+
+        width: 80%;
+
         font-size: 2.5vw;
         line-height: 3.25vw;
         font-weight: 300;
@@ -1195,7 +1269,7 @@ footer {
     }
 
     .casebody img {
-        width: 80%;
+        width: 75%;
         margin-top: 5vh;
         margin-bottom: 5vh;
 
@@ -1524,11 +1598,11 @@ footer {
     }
 
     .caseimage {
-        width: 85%;
+        width: 80%;
     }
 
     .casebody img {
-        width: 85%;
+        width: 80%;
     }
 
     .casebodysection {
@@ -1613,3 +1687,4 @@ footer {
 
 
   }
+

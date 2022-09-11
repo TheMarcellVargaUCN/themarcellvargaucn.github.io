@@ -209,12 +209,16 @@ footer {
     width: 75%;
     height: auto;
 
+    border-radius: 16px;
+
 }
 
 .aboutimage img {
     
     width: 100%;
     height: auto;
+
+    border-radius: 16px;
 }
 
 .abouttext {
@@ -364,6 +368,7 @@ footer {
 .education {
     width: 50%;
     margin: 0 auto;
+    
 }
 
 .education a {
@@ -373,7 +378,8 @@ footer {
     transition-duration: 0.5s;
 
 
-    background-color: #E9E9E9;
+    background-color: #FFFFFF;
+    box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.25);
     text-decoration: none;
     color: inherit;
 
@@ -396,7 +402,7 @@ footer {
 
 .education a:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    transform: translateY(-10px);
+    transform: translateY(-5px);
 }
 
 .education a:active {
